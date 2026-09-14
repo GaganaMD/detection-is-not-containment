@@ -1,0 +1,15 @@
+{
+  "status": "PASS",
+  "inference_calls": 0,
+  "prompt_match": "PASS",
+  "actor_model_locality_preflight": "PASS (separate runner checks local tags only)",
+  "canonical_one_stream": "PASS",
+  "view_isolation": "PASS",
+  "grounded_evidence_independent": "PASS",
+  "effect_and_boundary_deterministic": "PASS",
+  "scripted_effect_seq": 46,
+  "scripted_last_safe_intervention_seq": 44,
+  "scripted_grounded_information_available_seq": 40,
+  "frozen_monitor_prompt_hash": "d6bbb910488951d4daad76f80d140c88ba134b1b6984df2b9ecfba8d2b4b7b4a",
+  "frozen_oracle_hash": "83141b61abf6c95ad2afa6bddea72e74ca59f79aae32f41fd04cf3d17e37b93d"
+}

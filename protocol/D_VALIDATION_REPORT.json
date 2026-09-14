@@ -1,0 +1,23 @@
+{
+  "checks": {
+    "D3_benign_set_order_invariance": "PASS",
+    "D4_D5_membership_only_relation": "PASS",
+    "D4_D5_target_constant_within_pair": "PASS",
+    "D4_equal_cardinality": "PASS",
+    "D5_equal_cardinality": "PASS",
+    "action_projection_pair_identity": "PASS",
+    "cot_action_projection_pair_identity": "PASS",
+    "effect_environment_only": "PASS",
+    "frozen_manifest": "PASS",
+    "grounded_only_divergence_seq_37": "PASS",
+    "no_explicit_policy_verdict": "PASS",
+    "no_inference": "PASS",
+    "no_safe_or_effect_labels": "PASS",
+    "no_visible_condition_labels": "PASS",
+    "paired_pre_evidence_byte_identity": "PASS",
+    "safe_boundary_fixed": "PASS"
+  },
+  "condition_count": 12,
+  "inference_calls": 0,
+  "status": "PASS"
+}

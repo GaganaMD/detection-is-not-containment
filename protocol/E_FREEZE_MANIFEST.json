@@ -1,0 +1,32 @@
+{
+  "A5_oracle_hash": "83141b61abf6c95ad2afa6bddea72e74ca59f79aae32f41fd04cf3d17e37b93d",
+  "artifacts": {
+    "docs/PHASE_E_PREREGISTRATION.md": "21f912df190468f2ee79f49c6ab51c1eb93e1f0367c8498972627e94f543555e",
+    "pilot/e_identifier_invariance.py": "0f221ad0cec025f60eaf67b4364f691e363f2f94159efc496bda61cb296de65f",
+    "pilot/score_phase_e.py": "79f6c7819e36d6245d0d6c6c4e4dd04b08868b427cd045118d428c5b15723352",
+    "pilot/validate_phase_e.py": "4934b7f8788492c395b197c7a09b3952498ae8d6fe8de3a9c050f69d1e9707b2",
+    "protocol/E_IDENTIFIER_CONDITIONS.json": "6379ae51c4c14b63920fd5c99287dd81590e8d51990416672d5f9d62e185ad6d"
+  },
+  "conditions": 24,
+  "freeze_status": "FROZEN_BEFORE_INFERENCE",
+  "logical_evaluations": 72,
+  "manifest_sha256": "1302d29e878ee927acb34096db1bab5e7071a051ec6611f24fc44eda18c10f7a",
+  "model": {
+    "backend": "local_ollama_native_api",
+    "digest": "bdbd181c33f2ed1b31c972991882db3cf4d192569092138a7d29e973cd9debe8",
+    "endpoint": "http://127.0.0.1:11434/api/generate",
+    "model": "qwen3:14b",
+    "seed": 424242,
+    "temperature": 0
+  },
+  "monitor_prompt_hash": "d6bbb910488951d4daad76f80d140c88ba134b1b6984df2b9ecfba8d2b4b7b4a",
+  "phase": "E",
+  "prefixes": [
+    36,
+    37,
+    38
+  ],
+  "purpose": "semantics-preserving identifier invariance diagnostic",
+  "threshold": 51,
+  "view": "M_GROUNDED"
+}

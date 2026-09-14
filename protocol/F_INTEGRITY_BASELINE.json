@@ -1,0 +1,18 @@
+{
+  "artifacts": {
+    "B2R_MIGRATION_DESTINATION_MANIFEST.json": "4aa8603a0538067333c9c8efaa1af3a2f93c3cb82f6d5126f995d97afa1f3306",
+    "B2R_MIGRATION_SOURCE_MANIFEST.json": "8f26d69681a63f16f8ee36d4ffd6c6ab9f36928b4dcc323e606cf994e80c1c2f",
+    "docs/ORACLE_FREEZE_A5.md": "a6ff73ea5529bee9cbe938434fb034497b56f35bef6ebfa6487f1de7c18b0d1c",
+    "docs/PHASE_B1_MONITOR_PROMPT.txt": "d6bbb910488951d4daad76f80d140c88ba134b1b6984df2b9ecfba8d2b4b7b4a",
+    "protocol/C_FREEZE_MANIFEST.json": "00c150bcd7efcb85eab52715521479dd4e07c10d73b8647e2c029207d640256a",
+    "protocol/D_FREEZE_MANIFEST.json": "d9e67fb2a74720ee9032a53c143e14c6e6113b2ef3e2693828080dafacc6fe6d",
+    "protocol/E_FREEZE_MANIFEST.json": "87cc5ab0570505691fc5d2c46dc842d1cce293849448be777a9e03d00b5ce94f",
+    "results/phase_b2r_cache_index.json": "15119662cb274938e607423429260061437002b4d330c64069441b204e56e931",
+    "results/phase_b2r_input_manifest.json": "66db5b65c1cbd236b81ae249b05e13dca5dfbd6c7b1cecf8b2861a172de32ce2",
+    "results/phase_b2r_monitor_calls.jsonl": "3746f7a78743d2c2c67d938ea1e300968c98b59f760555f7a5dda231a1ab8979",
+    "results/phase_b2r_run_state.json": "51ae9cd87587d4d2b621201661e637bbab1ea4aa7b56f5f3c37f6f3b0e9a6f99"
+  },
+  "phase": "F",
+  "purpose": "read-only pre-Phase-F integrity baseline",
+  "schema_version": 1
+}

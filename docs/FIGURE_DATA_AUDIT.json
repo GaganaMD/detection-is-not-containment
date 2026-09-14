@@ -1,0 +1,122 @@
+{
+  "generator": "C:\\Users\\gagan\\Desktop\\agent-termination-assurance\\experiments\\intervention-aware-monitoring\\analysis\\generate_apart_figures_publication.py",
+  "policy": "derived visualization only; no model inference; frozen result artifacts are read-only",
+  "threshold": 51,
+  "source_sha256_before_and_after": {
+    "results/phase_b13_score_curves.csv": "4ef51ad83eaf5b2019258aa9815cb1c047fb5c06d5100578526641e3abf572b1",
+    "results/phase_c_counterfactuals.csv": "a69a66ad811d704acb2ca6a55eae9920282f39767cbfdd46a4a5ef4b53f79ed4",
+    "results/phase_e_summary.csv": "047d2f71d92d54f2977b6ecfeb8d70bb24845832389736df7ee1fc19a8edcd3b",
+    "results/phase_f_summary.csv": "551a67e475e778d9c28725aa6aba281c52397f2d1ccfa41f2edd5c5233736c90",
+    "results/phase_f_controller_executions.jsonl": "3e0c3a0c817156775ae4a8d54e445255d23bff11e0aa1597ac6fd8d9a34b9380"
+  },
+  "outputs": {
+    "C:\\Users\\gagan\\Desktop\\agent-termination-assurance\\experiments\\intervention-aware-monitoring\\figures\\apart_final\\fig3_closed_loop_intervention.png": {
+      "bytes": 115174,
+      "pixels": [
+        2434,
+        842
+      ]
+    },
+    "C:\\Users\\gagan\\Desktop\\agent-termination-assurance\\experiments\\intervention-aware-monitoring\\figures\\apart_final\\fig3_closed_loop_intervention.pdf": {
+      "bytes": 20388
+    },
+    "C:\\Users\\gagan\\Desktop\\agent-termination-assurance\\experiments\\intervention-aware-monitoring\\figures\\apart_final\\previews\\fig3_closed_loop_intervention_single_column.png": {
+      "bytes": 96842,
+      "pixels": [
+        1192,
+        407
+      ]
+    },
+    "C:\\Users\\gagan\\Desktop\\agent-termination-assurance\\experiments\\intervention-aware-monitoring\\figures\\apart_final\\fig1_evidence_representation.png": {
+      "bytes": 77048,
+      "pixels": [
+        1202,
+        877
+      ]
+    },
+    "C:\\Users\\gagan\\Desktop\\agent-termination-assurance\\experiments\\intervention-aware-monitoring\\figures\\apart_final\\fig1_evidence_representation.pdf": {
+      "bytes": 18596
+    },
+    "C:\\Users\\gagan\\Desktop\\agent-termination-assurance\\experiments\\intervention-aware-monitoring\\figures\\apart_final\\previews\\fig1_evidence_representation_single_column.png": {
+      "bytes": 76790,
+      "pixels": [
+        1192,
+        869
+      ]
+    },
+    "C:\\Users\\gagan\\Desktop\\agent-termination-assurance\\experiments\\intervention-aware-monitoring\\figures\\apart_final\\fig2_representation_robustness.png": {
+      "bytes": 199948,
+      "pixels": [
+        2433,
+        1631
+      ]
+    },
+    "C:\\Users\\gagan\\Desktop\\agent-termination-assurance\\experiments\\intervention-aware-monitoring\\figures\\apart_final\\fig2_representation_robustness.pdf": {
+      "bytes": 23682
+    },
+    "C:\\Users\\gagan\\Desktop\\agent-termination-assurance\\experiments\\intervention-aware-monitoring\\figures\\apart_final\\previews\\fig2_representation_robustness_single_column.png": {
+      "bytes": 172394,
+      "pixels": [
+        1192,
+        807
+      ]
+    },
+    "C:\\Users\\gagan\\Desktop\\agent-termination-assurance\\experiments\\intervention-aware-monitoring\\figures\\apart_final\\figS2_prefix_detection_timing.png": {
+      "bytes": 96885,
+      "pixels": [
+        1202,
+        877
+      ]
+    },
+    "C:\\Users\\gagan\\Desktop\\agent-termination-assurance\\experiments\\intervention-aware-monitoring\\figures\\apart_final\\figS2_prefix_detection_timing.pdf": {
+      "bytes": 20781
+    },
+    "C:\\Users\\gagan\\Desktop\\agent-termination-assurance\\experiments\\intervention-aware-monitoring\\figures\\apart_final\\previews\\figS2_prefix_detection_timing_single_column.png": {
+      "bytes": 96410,
+      "pixels": [
+        1192,
+        869
+      ]
+    },
+    "C:\\Users\\gagan\\Desktop\\agent-termination-assurance\\experiments\\intervention-aware-monitoring\\figures\\apart_final\\figS1_observation_channel_timing.png": {
+      "bytes": 65350,
+      "pixels": [
+        1769,
+        807
+      ]
+    },
+    "C:\\Users\\gagan\\Desktop\\agent-termination-assurance\\experiments\\intervention-aware-monitoring\\figures\\apart_final\\figS1_observation_channel_timing.pdf": {
+      "bytes": 16381
+    },
+    "C:\\Users\\gagan\\Desktop\\agent-termination-assurance\\experiments\\intervention-aware-monitoring\\figures\\apart_final\\previews\\figS1_observation_channel_timing_single_column.png": {
+      "bytes": 59370,
+      "pixels": [
+        1192,
+        541
+      ]
+    },
+    "C:\\Users\\gagan\\Desktop\\agent-termination-assurance\\experiments\\intervention-aware-monitoring\\figures\\apart_final\\figS3_closed_loop_outcomes.png": {
+      "bytes": 157495,
+      "pixels": [
+        2434,
+        957
+      ]
+    },
+    "C:\\Users\\gagan\\Desktop\\agent-termination-assurance\\experiments\\intervention-aware-monitoring\\figures\\apart_final\\figS3_closed_loop_outcomes.pdf": {
+      "bytes": 43714
+    },
+    "C:\\Users\\gagan\\Desktop\\agent-termination-assurance\\experiments\\intervention-aware-monitoring\\figures\\apart_final\\previews\\figS3_closed_loop_outcomes_single_column.png": {
+      "bytes": 109771,
+      "pixels": [
+        1192,
+        475
+      ]
+    }
+  },
+  "phase_e_verified_totals": {
+    "attack_detected": "12/12",
+    "benign_false_positive": "4/12",
+    "semantic_invariant": "8/12",
+    "control_ready": "3/12"
+  }
+}

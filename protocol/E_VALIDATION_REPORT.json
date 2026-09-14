@@ -1,0 +1,23 @@
+{
+  "artifact_hashes": {
+    "pilot\\e_identifier_invariance.py": "0f221ad0cec025f60eaf67b4364f691e363f2f94159efc496bda61cb296de65f",
+    "pilot\\validate_phase_e.py": "4934b7f8788492c395b197c7a09b3952498ae8d6fe8de3a9c050f69d1e9707b2",
+    "protocol\\E_IDENTIFIER_CONDITIONS.json": "6379ae51c4c14b63920fd5c99287dd81590e8d51990416672d5f9d62e185ad6d"
+  },
+  "condition_count": 24,
+  "family_count": 4,
+  "freeze_manifest_sha256": "1302d29e878ee927acb34096db1bab5e7071a051ec6611f24fc44eda18c10f7a",
+  "logical_evaluations": 72,
+  "opaque_token_constraint": "PASS",
+  "prefixes": [
+    36,
+    37,
+    38
+  ],
+  "score_phase_e_compile": "PASS",
+  "score_phase_e_sha256": "79f6c7819e36d6245d0d6c6c4e4dd04b08868b427cd045118d428c5b15723352",
+  "semantic_pair_invariants": "PASS",
+  "status": "PASS",
+  "threshold": 51,
+  "view": "M_GROUNDED"
+}

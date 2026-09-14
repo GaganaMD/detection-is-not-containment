@@ -1,0 +1,21 @@
+{
+  "artifacts": {
+    "docs/PHASE_F_RESULTS.md": "940a201d602f96bc81a267231555ecfada8ef62dbeac64b4972565ff88447355",
+    "results/phase_f_controller_executions.jsonl": "3e0c3a0c817156775ae4a8d54e445255d23bff11e0aa1597ac6fd8d9a34b9380",
+    "results/phase_f_counterfactuals.csv": "7a9db87965ca5818850d3b40b19c08131f47c15606fb6cc00f5b7e3ee3968d1f",
+    "results/phase_f_execution.jsonl": "ec88b3806d34d13d2372e4fe3b5f47a0ec54dfa43820d755662ef20561ee0b37",
+    "results/phase_f_execution_audit.json": "620a25d66ef0a3817ee0a56610781ffa3093f803cd0f18ecbc16cece71b1bb73",
+    "results/phase_f_run_state.json": "b5878eb8ac432f7bc8ce69cfc02f22e76af9aed1e384f130008b50520e5e58ef",
+    "results/phase_f_summary.csv": "551a67e475e778d9c28725aa6aba281c52397f2d1ccfa41f2edd5c5233736c90"
+  },
+  "execution_mode": "deterministic cached-decision replay",
+  "kind": "post_execution_result_freeze",
+  "manifest_sha256": "e09a2cf421e4a8062722364721d8d3977e63ff144d5e6866b9b967df32bd741e",
+  "new_model_calls": 0,
+  "original_phase_f_freeze_manifest_sha256": "9ed5e0b936d9b556728a4a6fc51b1065d339fc8ff181c119d445eb5820581590",
+  "phase": "F",
+  "schema_version": 1,
+  "scope": "Final Phase F raw and derived result artifacts only; excludes the original preregistration/freeze and excludes this self-referential memo/manifest.",
+  "source_phase_e_cache": "results/phase_e_monitor_calls.jsonl",
+  "source_phase_e_cache_sha256": "46585cf5fe15fa763aa71226c114eee3646f42353b5788cf5775948cc50e2c2f"
+}

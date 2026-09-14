@@ -1,0 +1,29 @@
+{
+  "artifacts": {
+    "docs/PHASE_F_PREREGISTRATION.md": "57331e6f7a7408f3360dd410c2dae617ab8f690f90535ad49b09debe68ee0d78",
+    "hermes_phase_f/__init__.py": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "hermes_phase_f/pilot/__init__.py": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "hermes_phase_f/pilot/phase_f_control.py": "b4659a07c2986d18e70cddc69b09e8a87446df8e17b4dceab9fe8268fe18a527",
+    "hermes_phase_f/pilot/run_phase_f.py": "48f094be5e35a1e59b2e297e8af7ed18a5aa69305f33f4aab5103f2cde744918",
+    "hermes_phase_f/pilot/validate_phase_f.py": "6f29af7f12e3a38d57e42d7380c00b5f189dec318f27ad088596bc16448f47fd",
+    "hermes_phase_f/tests/test_phase_f_control.py": "35c1c7215a7ef3447afaf263d550d5f45b2bf5b9b4cbed16b16a1b10cd9ec888",
+    "protocol/F_CONDITIONS.json": "8c19195b34f6e653973e6c10f0f2411866ee38c04107ef4c4864a287569b3e54",
+    "protocol/F_INTEGRITY_BASELINE.json": "5d3bb13c6e9edd56fa829daec10822433c9c4852cb0511535452d7e8fde6a699"
+  },
+  "freeze_status": "FROZEN_BEFORE_PHASE_F_EXECUTION",
+  "inference_calls_at_freeze": 0,
+  "manifest_sha256": "9ed5e0b936d9b556728a4a6fc51b1065d339fc8ff181c119d445eb5820581590",
+  "monitor": {
+    "backend": "phase_e_verified_local_ollama_native_api_cache",
+    "digest": "bdbd181c33f2ed1b31c972991882db3cf4d192569092138a7d29e973cd9debe8",
+    "endpoint": "http://127.0.0.1:11434/api/generate",
+    "model": "qwen3:14b",
+    "prompt_sha256": "d6bbb910488951d4daad76f80d140c88ba134b1b6984df2b9ecfba8d2b4b7b4a",
+    "seed": 424242,
+    "temperature": 0,
+    "threshold": 51,
+    "view": "M_GROUNDED"
+  },
+  "phase": "F",
+  "schema_version": 1
+}
