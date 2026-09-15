@@ -143,6 +143,21 @@
       "bytes": 1242
     },
     {
+      "path": "figures/fig1.png",
+      "sha256": "d3f2c414d451fc558d748563f1f7e82df1db43361dd5fc41d0a6a1424099a186",
+      "bytes": 1004121
+    },
+    {
+      "path": "figures/fig2.png",
+      "sha256": "68152cf5d6a86074b83d1512a16201777cc950ea2b4e0a23f3068501d49fb0cb",
+      "bytes": 1130096
+    },
+    {
+      "path": "figures/fig3.png",
+      "sha256": "948275da53d387d22fe363062a21e062330cba91d1597564947627875a522ce2",
+      "bytes": 1006814
+    },
+    {
       "path": "figures/main/fig1_evidence_representation.png",
       "sha256": "22b681b61e07c6f8a995b1e423937471aa6f41d23b9ab2cfb40c70ad0e806658",
       "bytes": 77048
