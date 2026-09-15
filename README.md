@@ -6,7 +6,7 @@ A local, deterministic AI-control research artifact about a basic but often-miss
 
 This repository measures monitor evidence and threshold crossings over trajectory prefixes, compares them to an independently frozen safety boundary, and then replays a matched authority-revocation intervention. The empirical setting is deliberately narrow: a synthetic authorization-controlled delivery environment, local Qwen monitors, fixed prompts, fixed inputs, and deterministic/cached evaluation where stated.
 
-![Evidence arrives differently across monitor views](figures/main/fig1_evidence_representation.png)
+![Evidence arrives differently across monitor views](figures/fig1.png)
 
 ## What the project shows — and does not show
 
@@ -23,7 +23,7 @@ This repository measures monitor evidence and threshold crossings over trajector
 - Chain-of-thought faithfulness. The A1 result is explicitly treated as sensitivity to externalized wording, not evidence that CoT is faithful.
 - Claims about unfinished B2/B2-R work. Its frozen protocol lineage and the B2-R cache baseline are retained solely because Phases C/F validate antecedent integrity byte-for-byte; they are not analyzed or presented as completed results.
 
-![Representation robustness is conditional, not assumed](figures/main/fig2_representation_robustness.png)
+![Representation robustness is conditional, not assumed](figures/fig2.png)
 
 ## Headline results
 
