@@ -1,0 +1,168 @@
+[
+  {
+    "source_id": "SRC01",
+    "url": "https://arxiv.org/abs/2507.15886",
+    "slug": "arxiv_org_abs_2507_15886",
+    "has_manual_fallback": false,
+    "cases": []
+  },
+  {
+    "source_id": "SRC02",
+    "url": "https://arxiv.org/abs/2604.21412",
+    "slug": "arxiv_org_abs_2604_21412",
+    "has_manual_fallback": false,
+    "cases": []
+  },
+  {
+    "source_id": "SRC03",
+    "url": "https://arxiv.org/abs/2605.11086",
+    "slug": "arxiv_org_abs_2605_11086",
+    "has_manual_fallback": false,
+    "cases": [
+      "openai_hf"
+    ]
+  },
+  {
+    "source_id": "SRC04",
+    "url": "https://arxiv.org/abs/2607.25890",
+    "slug": "arxiv_org_abs_2607_25890",
+    "has_manual_fallback": false,
+    "cases": []
+  },
+  {
+    "source_id": "SRC05",
+    "url": "https://collusion.wiki/",
+    "slug": "collusion_wiki",
+    "has_manual_fallback": false,
+    "cases": [
+      "dsewiki"
+    ]
+  },
+  {
+    "source_id": "SRC06",
+    "url": "https://factity.github.io/incident/openai-huggingface-incident-analysis.html",
+    "slug": "factity_github_io_incident_openai_huggingface_incident_analysis_html",
+    "has_manual_fallback": false,
+    "cases": [
+      "openai_hf"
+    ]
+  },
+  {
+    "source_id": "SRC07",
+    "url": "https://github.com/GaganaMD/agent-termination-assurance",
+    "slug": "github_com_GaganaMD_agent_termination_assurance",
+    "has_manual_fallback": false,
+    "cases": [
+      "openrouter_warning"
+    ]
+  },
+  {
+    "source_id": "SRC08",
+    "url": "https://github.com/GaganaMD/agent-termination-assurance/tree/main/OpenRouterExp/replicatingOpenRouterIncident",
+    "slug": "github_com_GaganaMD_agent_termination_assurance_tree_main_OpenRouterExp_replicatingOpenRouterIncident",
+    "has_manual_fallback": true,
+    "cases": [
+      "openrouter_warning"
+    ]
+  },
+  {
+    "source_id": "SRC09",
+    "url": "https://huggingface-anatomy-of-frontier-lab-model-intrusion.static.hf.space/index.html",
+    "slug": "huggingface_anatomy_of_frontier_lab_model_intrusion_static_hf_space_index_html",
+    "has_manual_fallback": true,
+    "cases": [
+      "hf_space_representative"
+    ]
+  },
+  {
+    "source_id": "SRC10",
+    "url": "https://huggingface.co/blog/agent-intrusion-technical-timeline",
+    "slug": "huggingface_co_blog_agent_intrusion_technical_timeline",
+    "has_manual_fallback": false,
+    "cases": [
+      "openai_hf"
+    ]
+  },
+  {
+    "source_id": "SRC11",
+    "url": "https://huggingface.co/blog/security-incident-july-2026",
+    "slug": "huggingface_co_blog_security_incident_july_2026",
+    "has_manual_fallback": false,
+    "cases": [
+      "openai_hf"
+    ]
+  },
+  {
+    "source_id": "SRC12",
+    "url": "https://labs.cloudsecurityalliance.org/research/csa-research-note-hugging-face-rogue-agent-swarm-20260902-cs/",
+    "slug": "labs_cloudsecurityalliance_org_research_csa_research_note_hugging_face_rogue_agent_swarm_20260902_cs",
+    "has_manual_fallback": false,
+    "cases": []
+  },
+  {
+    "source_id": "SRC13",
+    "url": "https://labs.cloudsecurityalliance.org/research/csa-research-note-openai-model-sandbox-escape-huggingface-br/",
+    "slug": "labs_cloudsecurityalliance_org_research_csa_research_note_openai_model_sandbox_escape_huggingface_br",
+    "has_manual_fallback": false,
+    "cases": []
+  },
+  {
+    "source_id": "SRC14",
+    "url": "https://openai.com/index/hugging-face-incident-and-the-road-ahead/",
+    "slug": "openai_com_index_hugging_face_incident_and_the_road_ahead",
+    "has_manual_fallback": false,
+    "cases": [
+      "openai_hf"
+    ]
+  },
+  {
+    "source_id": "SRC15",
+    "url": "https://www.anthropic.com/research/investigating-incidents-cybersecurity-evals",
+    "slug": "www_anthropic_com_research_investigating_incidents_cybersecurity_evals",
+    "has_manual_fallback": false,
+    "cases": [
+      "anthropic"
+    ]
+  },
+  {
+    "source_id": "SRC16",
+    "url": "https://www.hiddenlayer.com/report-and-guide/july-2026-agent-intrusion",
+    "slug": "www_hiddenlayer_com_report_and_guide_july_2026_agent_intrusion",
+    "has_manual_fallback": false,
+    "cases": [
+      "openai_hf"
+    ]
+  },
+  {
+    "source_id": "SRC17",
+    "url": "https://www.lesswrong.com/posts/fBLDaAKzigo65eJn7/public-evidence-of-the-openai-huggingface-ai-attack",
+    "slug": "www_lesswrong_com_posts_fBLDaAKzigo65eJn7_public_evidence_of_the_openai_huggingface_ai_attack",
+    "has_manual_fallback": true,
+    "cases": [
+      "openai_hf"
+    ]
+  },
+  {
+    "source_id": "SRC18",
+    "url": "https://www.lesswrong.com/posts/pok3KtAGApwvCBndf/further-public-evidence-of-the-openai-huggingface-attack",
+    "slug": "www_lesswrong_com_posts_pok3KtAGApwvCBndf_further_public_evidence_of_the_openai_huggingface_attack",
+    "has_manual_fallback": true,
+    "cases": [
+      "openai_hf"
+    ]
+  },
+  {
+    "source_id": "SRC19",
+    "url": "https://metr.org/blog/2026-08-26-openai-hugging-face-incident-investigation/",
+    "slug": "metr_org_blog_2026_08_26_openai_hugging_face_incident_investigation",
+    "has_manual_fallback": false,
+    "cases": []
+  },
+  {
+    "source_id": "SRC20",
+    "url": "https://openai.com/index/hugging-face-model-evaluation-security-incident/",
+    "slug": "openai_com_index_hugging_face_model_evaluation_security_incident",
+    "has_manual_fallback": false,
+    "cases": []
+  }
+]

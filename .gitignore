@@ -216,3 +216,9 @@ __marimo__/
 
 # Streamlit
 .streamlit/secrets.toml
+
+# API keys for the claims pipeline - never commit
+**/.*_key
+**/.*_key.*
+**/.*key.previous*
+.pytest_cache/

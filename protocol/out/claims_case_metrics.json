@@ -1,0 +1,72 @@
+{
+  "openai_hf": {
+    "n_claims": 494,
+    "n_sources": 8,
+    "source_ids": [
+      "SRC03",
+      "SRC06",
+      "SRC10",
+      "SRC11",
+      "SRC14",
+      "SRC16",
+      "SRC17",
+      "SRC18"
+    ],
+    "epistemic": {
+      "confirmed": 344,
+      "asserted": 150
+    },
+    "n_independently_corroborated_ge1": 7,
+    "n_independently_corroborated_ge2": 3
+  },
+  "anthropic": {
+    "n_claims": 23,
+    "n_sources": 1,
+    "source_ids": [
+      "SRC15"
+    ],
+    "epistemic": {
+      "confirmed": 23
+    },
+    "n_independently_corroborated_ge1": 0,
+    "n_independently_corroborated_ge2": 0
+  },
+  "hf_space_representative": {
+    "n_claims": 22,
+    "n_sources": 1,
+    "source_ids": [
+      "SRC09"
+    ],
+    "epistemic": {
+      "confirmed": 22
+    },
+    "n_independently_corroborated_ge1": 0,
+    "n_independently_corroborated_ge2": 0
+  },
+  "openrouter": {
+    "n_claims": 39,
+    "n_sources": 2,
+    "source_ids": [
+      "SRC07",
+      "SRC08"
+    ],
+    "epistemic": {
+      "confirmed": 39
+    },
+    "n_independently_corroborated_ge1": 0,
+    "n_independently_corroborated_ge2": 0
+  },
+  "dsewiki": {
+    "n_claims": 101,
+    "n_sources": 1,
+    "source_ids": [
+      "SRC05"
+    ],
+    "epistemic": {
+      "confirmed": 100,
+      "asserted": 1
+    },
+    "n_independently_corroborated_ge1": 1,
+    "n_independently_corroborated_ge2": 1
+  }
+}
