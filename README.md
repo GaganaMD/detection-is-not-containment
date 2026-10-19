@@ -6,6 +6,8 @@ A local, deterministic AI-control research artifact about a basic but often-miss
 
 This repository measures monitor evidence and threshold crossings over trajectory prefixes, compares them to an independently frozen safety boundary, and then replays a matched authority-revocation intervention. The empirical setting is deliberately narrow: a synthetic authorization-controlled delivery environment, local Qwen monitors, fixed prompts, fixed inputs, and deterministic/cached evaluation where stated.
 
+This repository accompanies the report *Detection Is Not Containment* (Gagana M D, Kaustubh Gupta, Maria Ines; Apart Research AI Incident Response Sprint). The report has three parts: a public-source **forensics** pipeline over five AI incidents (`forensics/`, `claims/`), a **protocol** that scores those cases on a sim/real checklist (`protocol/`), and the controlled monitoring **experiment** described in the rest of this README (`pilot/`, `hermes_phase_f/`, `results/`). The experiment does not read the forensics or protocol inputs.
+
 ![Evidence arrives differently across monitor views](figures/fig1.png)
 
 ## What the project shows — and does not show
@@ -38,6 +40,34 @@ This repository measures monitor evidence and threshold crossings over trajector
 
 ![Closed-loop intervention changes environment authority, not the actor history](figures/main/fig3_closed_loop_intervention.png)
 
+## Forensics and protocol results
+
+**Forensics.** Claims were extracted with a local `qwen2.5:14b-instruct-q4_K_M` (Ollama), each with a verbatim quote and an epistemic tag, then cross-checked against the other sources (a link-based filter separates independent corroboration from citation). 679 claims across five cases:
+
+| Case | Claims | Sources |
+|---|---:|---:|
+| OpenAI → Hugging Face | 494 | 8 |
+| DseWiki | 101 | 1 |
+| OpenRouter | 39 | 2 |
+| Anthropic | 23 | 1 |
+| Hugging Face Space replay | 22 | 1 |
+
+Four of the five cases rest on one or two sources, so most of their claims are single-sourced.
+
+**Protocol.** An 8-item sim/real checklist (SR-1..SR-8) plus a Stance Audit (SA-1) was scored per case from the claims:
+
+- SR-1 (internet actually blocked), SR-4 (isolation proven before the run) and SR-6 (canaries trip an alarm) FAIL on every case with enough evidence to score; SR-6 fails on all five.
+- SR-7 and SA-1 (does the postmortem name the design, not just what the model wanted) PASS on the four well-documented cases.
+- SR-8 (evaluation-awareness reasoning checked) stays UNKNOWN: no public source contains a chain-of-thought transcript.
+- An independent LLM audit agrees with the heuristic scorer on 22 of 40 items (55%), and 2 of 8 (25%) on the largest case. The checklist is a draft, not a validated instrument.
+
+Per-case sheets are in `protocol/checklist_scores_from_claims/`; counts and audit output are in `protocol/out/`. Page snapshots are not shipped (third-party content): fetch them with `forensics/sources/fetch_snapshots.py` to re-run extraction. Reproduce the deterministic parts with:
+
+```bash
+python3 protocol/src/claims_case_metrics.py
+(cd claims && python3 -m unittest discover -s tests)
+```
+
 ## Design in one page
 
 The same canonical trajectory is projected into three monitor-visible views:
@@ -68,6 +98,9 @@ figures/main/                three judge-facing explanatory PNGs
 figures/supporting/          timing and outcome supporting figures
 tests/                       deterministic apparatus and protocol tests
 scripts/verify_release.py   read-only integrity and release-layout verification
+claims/                      claim extraction, link prefilter, corroboration, aggregation (src/, tests/, out/)
+forensics/                   source manifests (URLs + SHA-256) and fetch scripts for the 20 public sources
+protocol/                    frozen experiment conditions (upper-case files) plus the sim/real checklist: rubric, stance sheets, scorers, per-case sheets
 ```
 
 ## Reproduce and verify

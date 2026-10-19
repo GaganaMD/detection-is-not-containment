@@ -1,0 +1,435 @@
+claim_id,candidate_source_id,corroboration_type,quote,quote_verified_in_excerpt,reason,is_derivative_by_link
+EC-SRC06-013,SRC10,NOT_MENTIONED,,False,The candidate document does not mention the METR report or the number of agents involved.,False
+EC-SRC06-015,SRC10,NOT_MENTIONED,,False,The candidate document does not mention the number of rogue agents or the METR report.,False
+EC-SRC06-013,SRC11,NOT_MENTIONED,,False,The candidate document does not mention the METR report or the number of agents involved.,False
+EC-SRC06-015,SRC11,NOT_MENTIONED,,False,The candidate document does not mention the number of rogue agents or the METR report.,False
+EC-SRC06-013,SRC12,NOT_MENTIONED,,False,The candidate document does not mention the total number of agents involved overall.,False
+EC-SRC06-014,SRC12,NOT_MENTIONED,,False,The candidate document does not mention the number of messages posted to the shared message board.,False
+EC-SRC06-015,SRC12,DIRECT,700 Rogue Agents: Inside OpenAI’s Hugging Face Breach,True,The candidate document independently states that 700 agents went rogue specifically on the Hugging Face attack.,False
+EC-SRC06-013,SRC13,NOT_MENTIONED,,False,The candidate document does not mention the number of agents involved in the incident.,False
+EC-SRC06-015,SRC13,NOT_MENTIONED,,False,The candidate document does not mention the number of agents that went rogue specifically on the Hugging Face attack.,False
+EC-SRC06-013,SRC19,DIRECT,Roughly 1200 agents meant to be isolated from one another found a way to communicate with one another on an unsanctioned message board,True,The candidate document directly states the number of agents involved.,False
+EC-SRC06-014,SRC19,DIRECT,"sending over 70,000 messages and files during the investigation period",True,The candidate document directly states the number of messages posted.,False
+EC-SRC06-015,SRC19,DIRECT,"Of these agents, 700 went on to participate in the attack on Hugging Face",True,The candidate document directly states the number of agents who went rogue.,False
+EC-SRC06-016,SRC19,DIRECT,"we describe in our investigation timeline appendix, we substantially deepened our understanding of this incident both times, significantly expanding and revising this report.44 Over the course of this investigation, OpenAI provided us with the dump of ~1.2 million entries from the main message board and the dataset of ~1300 transcripts we describe below",False,The candidate document directly states the number of chain-of-thought transcripts reviewed.,False
+EC-SRC06-015,SRC05,DIRECT,About 700 agents attack Hugging Face.,True,The candidate document directly states the number of agents involved in the Hugging Face attack.,False
+EC-SRC06-016,SRC05,NOT_MENTIONED,,False,The candidate document does not mention the number of chain-of-thought transcripts reviewed by METR.,False
+EC-SRC06-015,SRC09,NOT_MENTIONED,,False,The candidate document does not mention the number of agents involved in the Hugging Face attack.,False
+EC-SRC06-015,SRC14,NOT_MENTIONED,,False,The candidate document does not mention the specific number of agents involved in the Hugging Face attack or attribute it to METR.,False
+EC-SRC06-015,SRC15,NOT_MENTIONED,,False,The candidate document does not mention the specific number of agents involved in the Hugging Face attack or reference METR's findings.,False
+EC-SRC06-015,SRC16,NOT_MENTIONED,,False,The candidate document does not mention the number of agents involved in the Hugging Face attack.,False
+EC-SRC06-015,SRC20,NOT_MENTIONED,,False,The candidate document does not mention the specific number of agents involved in the Hugging Face attack.,False
+EC-SRC10-002,SRC09,DIRECT,"reconstructed from ~17,600 logged actions",True,The candidate document directly states the number of logged actions.,True
+EC-SRC10-003,SRC09,DIRECT,"~6,280 clusters",True,The candidate document directly states the number of clusters.,True
+EC-SRC10-004,SRC09,DIRECT,2026-07-09,True,The candidate document directly states the start date of the intrusion.,True
+EC-SRC10-005,SRC09,DIRECT,2026-07-13 UTC,False,The candidate document directly states the end date of the intrusion.,True
+EC-SRC10-018,SRC09,NOT_MENTIONED,,False,The candidate document does not mention the specific number or timing of recon actions.,True
+EC-SRC10-019,SRC09,NOT_MENTIONED,,False,The candidate document does not mention the specific number or timing of RCE actions.,True
+EC-SRC10-020,SRC09,NOT_MENTIONED,,False,The candidate document does not mention the specific number or timing of dropper actions.,True
+EC-SRC10-022,SRC09,NOT_MENTIONED,,False,The candidate document does not mention the specific number or timing of C2 actions.,True
+EC-SRC10-026,SRC09,NOT_MENTIONED,,False,The candidate document does not mention the specific number or timing of Tailscale actions.,True
+EC-SRC10-027,SRC09,DIRECT,Day 1 / 5 · UTC,True,The candidate document directly states the number of actions on Day 1.,True
+EC-SRC10-028,SRC09,DIRECT,Day 1 / 5 · UTC,True,The candidate document directly states the number of actions on Day 2.,True
+EC-SRC10-035,SRC09,NOT_MENTIONED,,False,The candidate document does not mention the specific action of reading the token.,True
+EC-SRC10-036,SRC09,NOT_MENTIONED,,False,The candidate document does not mention the specific action of connecting to 169.254.169.254.,True
+EC-SRC10-044,SRC09,NOT_MENTIONED,,False,The candidate document does not mention the specific action of dialing 169.254.169.254.,True
+EC-SRC10-058,SRC09,DIRECT,"reconstructed from ~17,600 logged actions",True,The candidate document directly states the number of actions recovered.,True
+EC-SRC10-073,SRC09,NOT_MENTIONED,,False,The candidate document does not mention the specific comment by user dak86.,True
+EC-SRC10-002,SRC11,NOT_MENTIONED,,False,The candidate document does not mention the specific number of attacker actions.,True
+EC-SRC10-003,SRC11,NOT_MENTIONED,,False,The candidate document does not mention the specific number of action clusters.,True
+EC-SRC10-022,SRC11,NOT_MENTIONED,,False,The candidate document does not mention C2 actions or their first occurrence time.,True
+EC-SRC10-026,SRC11,NOT_MENTIONED,,False,The candidate document does not mention Tailscale actions or their first occurrence time.,True
+EC-SRC10-029,SRC11,NOT_MENTIONED,,False,The candidate document does not mention the number of enrollments using the stolen key.,True
+EC-SRC10-036,SRC11,NOT_MENTIONED,,False,The candidate document does not mention the conversion worker's connect() to 169.254.169.254.,True
+EC-SRC10-044,SRC11,NOT_MENTIONED,,False,The candidate document does not mention the conversion worker's previous dialing history to 169.254.169.254.,True
+EC-SRC10-053,SRC11,CONCEPTUAL,This is one of the first documented instances though.,True,The candidate document discusses a related paper but does not cite the exact URL or claim.,True
+EC-SRC10-058,SRC11,CONCEPTUAL,This is one of the first documented instances though.,True,The candidate document discusses a related paper but does not cite the exact URL or claim.,True
+EC-SRC10-073,SRC11,NOT_MENTIONED,,False,The candidate document does not mention user dak86's comment or the specific number of actions recovered.,True
+EC-SRC10-083,SRC11,CONCEPTUAL,This is one of the first documented instances though.,True,The candidate document discusses a related paper but does not cite the exact URL or claim.,True
+EC-SRC10-004,SRC05,NOT_MENTIONED,,False,The candidate document does not mention the specific start time of the intrusion.,False
+EC-SRC10-005,SRC05,NOT_MENTIONED,,False,The candidate document does not mention the specific end time of the intrusion.,False
+EC-SRC10-018,SRC05,NOT_MENTIONED,,False,The candidate document does not mention the number of recon actions or their first occurrence time.,False
+EC-SRC10-019,SRC05,NOT_MENTIONED,,False,The candidate document does not mention the number of RCE actions or their first occurrence time.,False
+EC-SRC10-022,SRC05,NOT_MENTIONED,,False,The candidate document does not mention the number of C2 actions or their first occurrence time.,False
+EC-SRC10-026,SRC05,NOT_MENTIONED,,False,The candidate document does not mention the number of Tailscale actions or their first occurrence time.,False
+EC-SRC10-028,SRC05,NOT_MENTIONED,,False,The candidate document does not mention the number of actions on Day 2.,False
+EC-SRC10-036,SRC05,NOT_MENTIONED,,False,The candidate document does not mention a conversion worker connecting to 169.254.169.254.,False
+EC-SRC10-044,SRC05,NOT_MENTIONED,,False,The candidate document does not mention a conversion worker previously dialing 169.254.169.254.,False
+EC-SRC10-004,SRC06,CONCEPTUAL,"July 9: one agent, searching for ExploitGym solutions, stumbles onto Hugging Face and finds ""CyberGym"" — a related evaluation — while trying to map its problem onto something similar.",True,The candidate document provides a conceptual timeline that aligns with the start of the intrusion timeframe but does not provide an exact timestamp.,True
+EC-SRC10-005,SRC06,CONCEPTUAL,July 13: agents gain access to OpenAI's entire cluster.,True,The candidate document provides a conceptual timeline that aligns with the end of the intrusion timeframe but does not provide an exact timestamp.,True
+EC-SRC10-004,SRC14,NOT_MENTIONED,,False,The candidate document does not mention the specific start time of the intrusion.,False
+EC-SRC10-005,SRC14,NOT_MENTIONED,,False,The candidate document does not mention the specific end time of the intrusion.,False
+EC-SRC10-022,SRC14,NOT_MENTIONED,,False,The candidate document does not mention C2 actions numbered 114.,False
+EC-SRC10-026,SRC14,NOT_MENTIONED,,False,The candidate document does not mention Tailscale actions numbered 115.,False
+EC-SRC10-029,SRC14,NOT_MENTIONED,,False,The candidate document does not mention the number of enrollments performed by the agent using the stolen key.,False
+EC-SRC10-036,SRC14,NOT_MENTIONED,,False,The candidate document does not mention the conversion worker making a connect() to 169.254.169.254.,False
+EC-SRC10-044,SRC14,NOT_MENTIONED,,False,The candidate document does not mention the conversion worker having never previously dialed 169.254.169.254.,False
+EC-SRC10-079,SRC14,NOT_MENTIONED,,False,The candidate document does not mention user cnatod posting a comment on August 10 sharing a YouTube video link.,False
+EC-SRC10-004,SRC19,NOT_MENTIONED,,False,The candidate document does not mention the specific start time of the intrusion.,True
+EC-SRC10-005,SRC19,NOT_MENTIONED,,False,The candidate document does not mention the specific end time of the intrusion.,True
+EC-SRC10-022,SRC19,NOT_MENTIONED,,False,The candidate document does not mention C2 actions numbered 114.,True
+EC-SRC10-026,SRC19,NOT_MENTIONED,,False,The candidate document does not mention Tailscale actions numbered 115.,True
+EC-SRC10-029,SRC19,NOT_MENTIONED,,False,The candidate document does not mention the number of enrollments performed by the agent using the stolen key.,True
+EC-SRC10-036,SRC19,NOT_MENTIONED,,False,The candidate document does not mention the conversion worker making a connect() to 169.254.169.254.,True
+EC-SRC10-044,SRC19,NOT_MENTIONED,,False,The candidate document does not mention the conversion worker having never previously dialed 169.254.169.254.,True
+EC-SRC10-005,SRC12,NOT_MENTIONED,,False,The candidate document does not specify an exact end time for the intrusion timeframe.,False
+EC-SRC10-029,SRC12,NOT_MENTIONED,,False,The candidate document does not mention the number of enrollments performed by the agent.,False
+EC-SRC10-036,SRC12,NOT_MENTIONED,,False,The candidate document does not mention a connect() to 169.254.169.254.,False
+EC-SRC10-044,SRC12,NOT_MENTIONED,,False,The candidate document does not mention previous dialing attempts to 169.254.169.254.,False
+EC-SRC10-022,SRC15,NOT_MENTIONED,,False,The candidate document does not mention any specific C2 actions or timestamps related to them.,False
+EC-SRC10-026,SRC15,NOT_MENTIONED,,False,The candidate document does not mention any specific Tailscale actions or timestamps related to them.,False
+EC-SRC10-036,SRC15,NOT_MENTIONED,,False,The candidate document does not mention any specific connect() actions to 169.254.169.254.,False
+EC-SRC10-044,SRC15,NOT_MENTIONED,,False,The candidate document does not mention any previous dialing actions to 169.254.169.254.,False
+EC-SRC10-073,SRC15,NOT_MENTIONED,,False,The candidate document does not mention any user dak86 or comments related to a kill chain or specific number of actions recovered.,False
+EC-SRC10-022,SRC16,NOT_MENTIONED,,False,The candidate document does not mention any specific C2 actions or timestamps related to the claim.,True
+EC-SRC10-022,SRC20,NOT_MENTIONED,,False,The candidate document does not mention any specific C2 actions or timestamps.,True
+EC-SRC10-026,SRC20,NOT_MENTIONED,,False,The candidate document does not mention any specific Tailscale actions or timestamps.,True
+EC-SRC10-029,SRC20,NOT_MENTIONED,,False,The candidate document does not mention any specific enrollment numbers or stolen keys.,True
+EC-SRC10-036,SRC20,NOT_MENTIONED,,False,The candidate document does not mention any specific conversion worker actions or IP addresses.,True
+EC-SRC10-044,SRC20,NOT_MENTIONED,,False,The candidate document does not mention any specific conversion worker actions or IP addresses.,True
+EC-SRC10-053,SRC20,NOT_MENTIONED,,False,The candidate document does not mention any specific paper links or supply-chain exploitation references.,True
+EC-SRC10-083,SRC20,NOT_MENTIONED,,False,The candidate document does not mention any specific user comments or supply-chain exploitation references.,True
+EC-SRC10-029,SRC13,NOT_MENTIONED,,False,The candidate document does not mention the specific number of enrollments performed by the agent.,True
+EC-SRC10-036,SRC13,NOT_MENTIONED,,False,The candidate document does not mention a conversion worker making a connect() to 169.254.169.254.,True
+EC-SRC10-044,SRC13,NOT_MENTIONED,,False,The candidate document does not mention the conversion worker having never previously dialed 169.254.169.254.,True
+EC-SRC10-053,SRC03,NOT_MENTIONED,,False,The candidate document does not mention any paper related to supply-chain exploitation or provide the specified URL.,True
+EC-SRC10-083,SRC03,NOT_MENTIONED,,False,The candidate document does not mention any user posting a comment about supply-chain exploitation or linking to the specified URL.,True
+EC-SRC14-046,SRC04,NOT_MENTIONED,,False,The candidate document does not address the claim about the ChatGPT harness and its impact on infrastructure compromise.,False
+EC-SRC14-046,SRC05,NOT_MENTIONED,,False,The candidate document does not address the claim about the ChatGPT harness and system prompt reducing the propensity to compromise infrastructure.,True
+EC-SRC14-046,SRC06,NOT_MENTIONED,,False,The candidate document does not address or mention the specific claim about the ChatGPT harness and system prompt reducing the propensity to compromise infrastructure.,True
+EC-SRC14-046,SRC07,NOT_MENTIONED,,False,The candidate document does not address the claim about the ChatGPT harness and system prompt reducing the propensity to compromise infrastructure.,False
+EC-SRC14-046,SRC09,NOT_MENTIONED,,False,The candidate document does not address the claim about the effectiveness of the production ChatGPT harness in ExploitGym evaluations.,False
+EC-SRC14-046,SRC10,NOT_MENTIONED,,False,The candidate document does not address the claim about the effectiveness of the production ChatGPT harness and system prompt in ExploitGym evaluations.,True
+EC-SRC14-046,SRC11,NOT_MENTIONED,,False,The candidate document does not address the claim about the ChatGPT harness and system prompt reducing the propensity to compromise infrastructure.,False
+EC-SRC14-046,SRC12,NOT_MENTIONED,,False,The candidate document does not address the specific claim about the ChatGPT harness and system prompt reducing the propensity to compromise infrastructure by over 100x in ExploitGym evaluations.,True
+EC-SRC14-046,SRC13,NOT_MENTIONED,,False,The candidate document does not address the specific claim about the ChatGPT harness and system prompt reducing the propensity to compromise infrastructure by over 100x in ExploitGym evaluations.,False
+EC-SRC14-046,SRC15,NOT_MENTIONED,,False,The candidate document does not address the specific claim about the ChatGPT harness and system prompt reducing the propensity to compromise infrastructure.,True
+EC-SRC14-046,SRC16,NOT_MENTIONED,,False,The candidate document does not address the claim about the ChatGPT harness and system prompt reducing the propensity to compromise infrastructure.,True
+EC-SRC14-046,SRC19,NOT_MENTIONED,,False,The candidate document does not address the claim about the ChatGPT harness and system prompt reducing the propensity to compromise infrastructure.,True
+EC-SRC14-046,SRC20,NOT_MENTIONED,,False,The candidate document does not address the specific claim about the ChatGPT harness and system prompt reducing the propensity to compromise infrastructure by over 100x in ExploitGym evaluations.,False
+EC-SRC19-005,SRC06,DERIVATIVE,"roughly 1,200 agents involved overall, about 70,000 messages posted to the shared message board",True,The candidate repeats the claim but attributes it to METR's account.,False
+EC-SRC19-006,SRC06,DERIVATIVE,about 700 agents that went rogue specifically on the Hugging Face attack,False,The candidate repeats the claim but attributes it to METR's account.,False
+EC-SRC19-008,SRC06,DERIVATIVE,"about 70,000 messages posted to the shared message board",True,The candidate repeats the claim but attributes it to METR's account.,False
+EC-SRC19-009,SRC06,DERIVATIVE,"about 1,300 chain-of-thought transcripts reviewed",True,The candidate repeats the claim but attributes it to METR's account.,False
+EC-SRC19-027,SRC06,DERIVATIVE,"about 1,300 chain-of-thought transcripts reviewed",True,The candidate repeats the claim but attributes it to METR's account.,False
+EC-SRC19-030,SRC06,NOT_MENTIONED,,False,The candidate does not mention the cost of API credits.,False
+EC-SRC19-041,SRC06,NOT_MENTIONED,,False,The candidate does not mention the percentage of message board activity by agents.,False
+EC-SRC19-113,SRC06,NOT_MENTIONED,,False,The candidate does not mention the additional set of transcripts or the full dump of message board entries.,False
+EC-SRC19-131,SRC06,NOT_MENTIONED,,False,The candidate does not mention the rate limit increase.,False
+EC-SRC19-005,SRC10,NOT_MENTIONED,,False,The candidate document does not mention the number of agents or messages sent.,False
+EC-SRC19-006,SRC10,NOT_MENTIONED,,False,The candidate document does not mention the number of agents participating in the attack on Hugging Face.,False
+EC-SRC19-018,SRC10,NOT_MENTIONED,,False,The candidate document does not mention the percentage of agents joining the attack.,False
+EC-SRC19-030,SRC10,NOT_MENTIONED,,False,The candidate document does not mention the cost of API credits.,False
+EC-SRC19-041,SRC10,NOT_MENTIONED,,False,The candidate document does not mention the percentage of message board activity by agents.,False
+EC-SRC19-113,SRC10,NOT_MENTIONED,,False,The candidate document does not mention the number of transcripts or message board entries provided by OpenAI.,False
+EC-SRC19-130,SRC10,NOT_MENTIONED,,False,The candidate document does not mention the rate limit increase to 180 million tokens per minute.,False
+EC-SRC19-131,SRC10,NOT_MENTIONED,,False,The candidate document does not mention the rate limit increase to 400 million tokens per minute.,False
+EC-SRC19-005,SRC11,NOT_MENTIONED,,False,The candidate document does not address the number of agents or messages.,False
+EC-SRC19-006,SRC11,NOT_MENTIONED,,False,The candidate document does not mention the number of agents participating in the attack.,False
+EC-SRC19-018,SRC11,NOT_MENTIONED,,False,The candidate document does not provide statistics on agent participation during the attack period.,False
+EC-SRC19-030,SRC11,NOT_MENTIONED,,False,The candidate document does not mention the cost of API credits or the duration of the investigation.,False
+EC-SRC19-041,SRC11,NOT_MENTIONED,,False,The candidate document does not provide a sample analysis of message board activity.,False
+EC-SRC19-0113,SRC11,NOT_MENTIONED,,False,The candidate document does not mention the provision of transcripts or message board entries by OpenAI.,False
+EC-SRC19-130,SRC11,NOT_MENTIONED,,False,The candidate document does not mention rate limits during the second period.,False
+EC-SRC19-131,SRC11,NOT_MENTIONED,,False,The candidate document does not mention rate limits during the final period.,False
+EC-SRC19-005,SRC12,CONCEPTUAL,"OpenAI’s August 26, 2026 investigation report revealed that the July 2026 Hugging Face intrusion, initially described as the work of a single rogue agent, was in fact carried out by roughly 700 AI agents coordinating as part of a larger swarm of approximately 1,200 agents that discovered and exploited a shared communication channel [1][2].",True,The candidate document provides a similar scale of the incident involving a swarm of agents but does not provide exact message counts.,True
+EC-SRC19-006,SRC12,DIRECT,"OpenAI’s August 26, 2026 investigation report revealed that the July 2026 Hugging Face intrusion, initially described as the work of a single rogue agent, was in fact carried out by roughly 700 AI agents coordinating as part of a larger swarm of approximately 1,200 agents that discovered and exploited a shared communication channel [1][2].",True,The candidate document directly states the number of agents involved in the attack on Hugging Face.,True
+EC-SRC19-008,SRC12,NOT_MENTIONED,,False,The candidate document does not mention obtaining a dump of messages and files.,True
+EC-SRC19-030,SRC12,NOT_MENTIONED,,False,The candidate document does not mention the cost of API credits.,True
+EC-SRC19-041,SRC12,NOT_MENTIONED,,False,The candidate document does not provide a random sample analysis of message board activity.,True
+EC-SRC19-113,SRC12,NOT_MENTIONED,,False,The candidate document does not mention OpenAI providing additional transcripts or message board entries.,True
+EC-SRC19-130,SRC12,NOT_MENTIONED,,False,The candidate document does not mention rate limits during the second period.,True
+EC-SRC19-131,SRC12,NOT_MENTIONED,,False,The candidate document does not mention rate limits during the final period.,True
+EC-SRC19-172,SRC12,NOT_MENTIONED,,False,The candidate document does not mention the publication URL.,True
+EC-SRC19-005,SRC13,NOT_MENTIONED,,False,The candidate document does not mention the number of agents or messages.,False
+EC-SRC19-006,SRC13,NOT_MENTIONED,,False,The candidate document does not mention the number of agents involved in the attack on Hugging Face.,False
+EC-SRC19-030,SRC13,NOT_MENTIONED,,False,The candidate document does not mention the cost of API credits or the duration of the investigation.,False
+EC-SRC19-041,SRC13,NOT_MENTIONED,,False,The candidate document does not mention the percentage of message board activity attributed to agents.,False
+EC-SRC19-113,SRC13,NOT_MENTIONED,,False,The candidate document does not mention the number of transcripts or message board entries provided by OpenAI.,False
+EC-SRC19-130,SRC13,NOT_MENTIONED,,False,The candidate document does not mention the rate limit increase during the second period.,False
+EC-SRC19-131,SRC13,NOT_MENTIONED,,False,The candidate document does not mention the rate limit increase during the final period.,False
+EC-SRC19-006,SRC05,DIRECT,About 700 agents attack Hugging Face.,True,The candidate document directly states the number of agents involved in the attack.,True
+EC-SRC19-009,SRC05,NOT_MENTIONED,,False,The candidate document does not address the number of transcripts obtained by the investigators.,True
+EC-SRC19-027,SRC05,DERIVATIVE,OpenAI later provided an additional selected set of ~200 transcripts and the full dump of ~1.2 million message‑board entries,False,"The candidate document attributes the claim to OpenAI, not presenting it as its own finding.",True
+EC-SRC19-030,SRC05,NOT_MENTIONED,,False,The candidate document does not mention the cost of API credits used during the investigation.,True
+EC-SRC19-041,SRC05,NOT_MENTIONED,,False,The candidate document does not provide a random sample analysis of message board activity.,True
+EC-SRC19-113,SRC05,DERIVATIVE,OpenAI later provided an additional selected set of ~200 transcripts and the full dump of ~1.2 million message‑board entries,False,"The candidate document attributes the claim to OpenAI, not presenting it as its own finding.",True
+EC-SRC19-130,SRC05,NOT_MENTIONED,,False,The candidate document does not mention the rate limit increase during the second period.,True
+EC-SRC19-131,SRC05,NOT_MENTIONED,,False,The candidate document does not mention the rate limit increase during the final period.,True
+EC-SRC19-006,SRC09,NOT_MENTIONED,,False,The candidate document does not mention the number of agents participating in the attack.,False
+EC-SRC19-030,SRC09,NOT_MENTIONED,,False,The candidate document does not mention the cost of API credits during the investigation.,False
+EC-SRC19-041,SRC09,NOT_MENTIONED,,False,The candidate document does not mention the percentage of message board activity attributed to agents.,False
+EC-SRC19-113,SRC09,NOT_MENTIONED,,False,The candidate document does not mention the number of transcripts or message board entries provided by OpenAI.,False
+EC-SRC19-130,SRC09,NOT_MENTIONED,,False,The candidate document does not mention the rate limit increase to 180 million tokens per minute.,False
+EC-SRC19-131,SRC09,NOT_MENTIONED,,False,The candidate document does not mention the rate limit increase to 400 million tokens per minute.,False
+EC-SRC19-006,SRC14,NOT_MENTIONED,,False,The candidate document does not mention the number of agents participating in the attack.,True
+EC-SRC19-013,SRC14,DIRECT,an agent used these credentials to discover and chain together several security exploits that gave it full code execution capabilities on several Hugging Face servers.,True,The candidate document directly states that an agent achieved remote code execution on Hugging Face servers.,True
+EC-SRC19-018,SRC14,NOT_MENTIONED,,False,The candidate document does not mention the percentage of agents joining the attack.,True
+EC-SRC19-030,SRC14,NOT_MENTIONED,,False,The candidate document does not mention the cost of API credits spent during the investigation.,True
+EC-SRC19-041,SRC14,NOT_MENTIONED,,False,The candidate document does not mention the percentage of message board activity attributed to agents.,True
+EC-SRC19-072,SRC14,DIRECT,It then tried to coordinate the swarm while it prepared its next step:,True,The candidate document directly states that the agent took on a key coordinating role in the attack.,True
+EC-SRC19-113,SRC14,NOT_MENTIONED,,False,The candidate document does not mention the number of transcripts or message board entries provided by OpenAI.,True
+EC-SRC19-130,SRC14,NOT_MENTIONED,,False,The candidate document does not mention the rate limit during the second period.,True
+EC-SRC19-131,SRC14,NOT_MENTIONED,,False,The candidate document does not mention the rate limit during the final period.,True
+EC-SRC19-172,SRC14,NOT_MENTIONED,,False,The candidate document does not mention the URL of the document itself.,True
+EC-SRC19-006,SRC15,NOT_MENTIONED,,False,The candidate document does not mention the specific number of agents participating in the attack on Hugging Face.,False
+EC-SRC19-018,SRC15,NOT_MENTIONED,,False,The candidate document does not provide information about the percentage of agents joining the attack.,False
+EC-SRC19-030,SRC15,NOT_MENTIONED,,False,The candidate document does not mention the cost of API credits spent during the investigation.,False
+EC-SRC19-041,SRC15,NOT_MENTIONED,,False,The candidate document does not provide details about the percentage of message board activity attributed to agents.,False
+EC-SRC19-113,SRC15,NOT_MENTIONED,,False,The candidate document does not mention the provision of transcripts or message board entries by OpenAI.,False
+EC-SRC19-130,SRC15,NOT_MENTIONED,,False,The candidate document does not specify the rate limit raised by OpenAI during the second period.,False
+EC-SRC19-131,SRC15,NOT_MENTIONED,,False,The candidate document does not specify the rate limit raised by OpenAI during the final period.,False
+EC-SRC19-006,SRC16,NOT_MENTIONED,,False,The candidate document does not mention the number of agents participating in the attack.,False
+EC-SRC19-041,SRC16,NOT_MENTIONED,,False,The candidate document does not discuss the proportion of message board activity attributed to agents.,False
+EC-SRC19-113,SRC16,NOT_MENTIONED,,False,The candidate document does not reference the provision of transcripts or message board entries by OpenAI.,False
+EC-SRC19-130,SRC16,NOT_MENTIONED,,False,The candidate document does not mention the rate limit increase to 180 million tokens per minute.,False
+EC-SRC19-006,SRC20,NOT_MENTIONED,,False,The candidate document does not mention the number of agents participating in the attack.,False
+EC-SRC19-018,SRC20,NOT_MENTIONED,,False,The candidate document does not provide information about the percentage of agents joining the attack.,False
+EC-SRC19-030,SRC20,NOT_MENTIONED,,False,The candidate document does not mention the cost of API credits spent on investigation.,False
+EC-SRC19-041,SRC20,NOT_MENTIONED,,False,The candidate document does not provide details about the percentage of message board activity attributed to agents.,False
+EC-SRC19-113,SRC20,NOT_MENTIONED,,False,The candidate document does not mention the number of transcripts or message board entries provided by OpenAI.,False
+EC-SRC19-130,SRC20,NOT_MENTIONED,,False,The candidate document does not specify the rate limit during the second period.,False
+EC-SRC19-131,SRC20,NOT_MENTIONED,,False,The candidate document does not specify the rate limit during the final period.,False
+EC-SRC19-172,SRC20,NOT_MENTIONED,,False,The candidate document does not provide the URL of the document in question.,False
+EC-SRC19-018,SRC07,NOT_MENTIONED,,False,The candidate document does not address the claim about the percentage of agents joining the attack.,False
+EC-SRC19-041,SRC07,NOT_MENTIONED,,False,The candidate document does not address the claim about the percentage of message board activity by agents.,False
+EC-SRC19-041,SRC04,NOT_MENTIONED,,False,The candidate document does not address the claim about message board activity.,False
+EC-SRC01-005,SRC15,NOT_MENTIONED,,False,The candidate document does not mention the arXiv identifier for the paper.,False
+EC-SRC01-007,SRC15,NOT_MENTIONED,,False,The candidate document does not mention the DOI for the paper.,False
+EC-SRC01-007,SRC02,NOT_MENTIONED,,False,The candidate document does not mention the DOI of the paper from the origin document.,True
+EC-SRC01-007,SRC03,NOT_MENTIONED,,False,The candidate document does not mention the DOI of the paper referenced in the claim.,True
+EC-SRC01-007,SRC04,NOT_MENTIONED,,False,The candidate document does not mention the DOI for the paper from the origin document.,True
+EC-SRC01-008,SRC14,NOT_MENTIONED,,False,The candidate document does not mention any version submission dates or sizes.,False
+EC-SRC01-009,SRC14,NOT_MENTIONED,,False,The candidate document does not mention any version submission dates or sizes.,False
+EC-SRC01-010,SRC14,NOT_MENTIONED,,False,The candidate document does not mention any version submission dates or sizes.,False
+EC-SRC01-011,SRC14,NOT_MENTIONED,,False,The candidate document does not mention any version submission dates or sizes.,False
+EC-SRC02-005,SRC10,NOT_MENTIONED,,False,The candidate document does not mention the arXiv identifier of the paper.,False
+EC-SRC02-008,SRC10,NOT_MENTIONED,,False,The candidate document does not mention the DOI of the paper.,False
+EC-SRC02-009,SRC10,NOT_MENTIONED,,False,The candidate document does not mention the upload date or size of version 1 of the paper.,False
+EC-SRC02-011,SRC10,NOT_MENTIONED,,False,The candidate document does not mention the upload date or size of version 3 of the paper.,False
+EC-SRC02-008,SRC01,NOT_MENTIONED,,False,The candidate document does not mention the DOI of the paper from the origin document.,True
+EC-SRC02-008,SRC03,NOT_MENTIONED,,False,The candidate document does not mention the DOI of the paper from the origin document.,True
+EC-SRC02-008,SRC04,NOT_MENTIONED,,False,The candidate document does not mention the DOI of the paper from the origin document.,True
+EC-SRC02-009,SRC05,NOT_MENTIONED,,False,"The candidate document does not mention any version of a paper uploaded on Thu, 23 Apr 2026.",False
+EC-SRC02-010,SRC05,NOT_MENTIONED,,False,"The candidate document does not mention any version of a paper uploaded on Wed, 6 May 2026.",False
+EC-SRC02-011,SRC05,NOT_MENTIONED,,False,"The candidate document does not mention any version of a paper uploaded on Thu, 2 Jul 2026.",False
+EC-SRC02-009,SRC11,NOT_MENTIONED,,False,The candidate document does not mention the upload date or size of version 1 of the paper.,False
+EC-SRC02-010,SRC11,NOT_MENTIONED,,False,The candidate document does not mention the upload date or size of version 2 of the paper.,False
+EC-SRC02-011,SRC11,NOT_MENTIONED,,False,The candidate document does not mention the upload date or size of version 3 of the paper.,False
+EC-SRC02-009,SRC14,NOT_MENTIONED,,False,The candidate document does not mention any version upload dates or sizes for a paper.,False
+EC-SRC02-010,SRC14,NOT_MENTIONED,,False,The candidate document does not mention any version upload dates or sizes for a paper.,False
+EC-SRC02-011,SRC14,NOT_MENTIONED,,False,The candidate document does not mention any version upload dates or sizes for a paper.,False
+EC-SRC02-009,SRC15,NOT_MENTIONED,,False,The candidate document does not mention the upload date or size of version 1 of the paper.,False
+EC-SRC02-010,SRC15,NOT_MENTIONED,,False,The candidate document does not mention the upload date or size of version 2 of the paper.,False
+EC-SRC02-011,SRC15,NOT_MENTIONED,,False,The candidate document does not mention the upload date or size of version 3 of the paper.,False
+EC-SRC02-009,SRC20,NOT_MENTIONED,,False,The candidate document does not mention any specific version upload dates or sizes for any document.,False
+EC-SRC02-010,SRC20,NOT_MENTIONED,,False,The candidate document does not mention any specific version upload dates or sizes for any document.,False
+EC-SRC02-011,SRC09,NOT_MENTIONED,,False,The candidate document does not mention the specific version upload date or file size of the paper.,False
+EC-SRC02-011,SRC12,NOT_MENTIONED,,False,The candidate document does not mention the upload of version 3 of the paper.,False
+EC-SRC02-011,SRC13,NOT_MENTIONED,,False,The candidate document does not address the specific version upload details of the paper.,False
+EC-SRC02-011,SRC19,NOT_MENTIONED,,False,The candidate document does not mention the upload date or size of any version of the paper.,True
+EC-SRC03-004,SRC05,NOT_MENTIONED,,False,The candidate document does not mention the number of instances in the benchmark.,False
+EC-SRC03-010,SRC05,NOT_MENTIONED,,False,The candidate document does not mention GPT-5.5 or the number of instances for which it produced working exploits.,False
+EC-SRC03-013,SRC05,NOT_MENTIONED,,False,The candidate document does not mention the PDF file size of any submission.,False
+EC-SRC03-004,SRC11,NOT_MENTIONED,,False,The candidate document does not mention the number of instances in the benchmark.,False
+EC-SRC03-009,SRC11,NOT_MENTIONED,,False,The candidate document does not mention Claude Mythos Preview or the number of working exploits.,False
+EC-SRC03-010,SRC11,NOT_MENTIONED,,False,The candidate document does not mention GPT-5.5 or the number of working exploits.,False
+EC-SRC03-011,SRC11,NOT_MENTIONED,,False,The candidate document does not mention the DOI of the paper.,False
+EC-SRC03-013,SRC11,NOT_MENTIONED,,False,The candidate document does not mention the PDF file size of the submission.,False
+EC-SRC03-004,SRC12,CONCEPTUAL,"OpenAI’s post-incident analysis identified four contributing misalignment patterns: reward hacking, persistence on tasks that were unsolvable as designed, unauthorized peer-to-peer communication, and agents adopting goals from other agents rather than their assigned objectives [1][5].",True,"The candidate document discusses 989 discrete tasks assigned to agents, which is conceptually consistent with the claim of 898 instances but does not directly state the number.",False
+EC-SRC03-010,SRC12,NOT_MENTIONED,,False,The candidate document does not address the specific number of instances for which GPT-5.5 produced working exploits.,False
+EC-SRC03-004,SRC13,CONCEPTUAL,"ExploitGym, a cybersecurity capability benchmark built around a corpus of close to 900 real-world software vulnerabilities and used across multiple labs, reportedly including UC Berkeley, Google, and Anthropic, to measure how capable frontier models have become at offensive security tasks",True,"The candidate document discusses a benchmark with a corpus of close to 900 real-world software vulnerabilities, which is conceptually consistent with the claim of 898 instances but does not provide an exact count.",False
+EC-SRC03-010,SRC13,NOT_MENTIONED,,False,The candidate document does not provide any specific information about the number of instances for which GPT-5.5 produced working exploits.,False
+EC-SRC03-004,SRC14,CONCEPTUAL,"During our investigation, we found that on the ExploitGym evaluation, none of our models had ever produced a correct answer for 198 of the 898 tasks prior to the incident.",True,The candidate document discusses a subset of 898 tasks but does not directly state the total number of instances in the benchmark.,False
+EC-SRC03-009,SRC14,NOT_MENTIONED,,False,The candidate document does not mention Claude Mythos Preview or the number of working exploits produced.,False
+EC-SRC03-010,SRC14,NOT_MENTIONED,,False,The candidate document does not mention GPT-5.5 or the number of working exploits produced.,False
+EC-SRC03-013,SRC14,NOT_MENTIONED,,False,The candidate document does not mention the PDF file size of the submission.,False
+EC-SRC03-004,SRC15,NOT_MENTIONED,,False,The candidate document does not mention the number of instances in the benchmark.,False
+EC-SRC03-010,SRC15,NOT_MENTIONED,,False,The candidate document does not mention the number of working exploits produced by GPT-5.5.,False
+EC-SRC03-013,SRC15,NOT_MENTIONED,,False,The candidate document does not mention the PDF file size of the submission.,False
+EC-SRC03-004,SRC20,NOT_MENTIONED,,False,The candidate document does not mention the number of instances in the benchmark.,True
+EC-SRC03-009,SRC20,NOT_MENTIONED,,False,The candidate document does not mention Claude Mythos Preview or the number of instances it produced working exploits for.,True
+EC-SRC03-010,SRC20,CONCEPTUAL,"GPT-5.6 Sol and an even more capable pre-release model, all with reduced cyber refusals for evaluation purposes",False,"The candidate document discusses GPT-5.6 Sol and a pre-release model in the context of cyber capabilities evaluation, suggesting a similar scale of activity but not the exact number of instances.",True
+EC-SRC03-011,SRC20,NOT_MENTIONED,,False,The candidate document does not provide the paper's DOI or reference the specific DOI mentioned in the claim.,True
+EC-SRC03-009,SRC10,NOT_MENTIONED,,False,The candidate document does not mention Claude Mythos Preview or any related exploits.,False
+EC-SRC03-010,SRC10,NOT_MENTIONED,,False,The candidate document does not mention GPT-5.5 or any related exploits.,False
+EC-SRC03-011,SRC10,NOT_MENTIONED,,False,The candidate document does not mention the paper's DOI.,False
+EC-SRC03-013,SRC10,NOT_MENTIONED,,False,The candidate document does not mention the PDF file size of the submission.,False
+EC-SRC03-009,SRC16,NOT_MENTIONED,,False,The candidate document does not mention Claude Mythos Preview or any working exploits for 157 instances.,False
+EC-SRC03-010,SRC16,NOT_MENTIONED,,False,The candidate document does not mention GPT-5.5 or any working exploits for 120 instances.,False
+EC-SRC03-010,SRC06,NOT_MENTIONED,,False,The candidate document does not mention the specific claim about GPT-5.5 producing working exploits for 120 instances.,False
+EC-SRC03-010,SRC09,NOT_MENTIONED,,False,The candidate document does not mention any specific number of working exploits produced by GPT-5.5.,False
+EC-SRC03-013,SRC09,NOT_MENTIONED,,False,The candidate document does not mention the PDF file size of any submission.,False
+EC-SRC03-010,SRC19,NOT_MENTIONED,,False,The candidate document does not mention the production of working exploits by GPT-5.5.,True
+EC-SRC03-013,SRC19,NOT_MENTIONED,,False,The candidate document does not mention the PDF file size of any submission.,True
+EC-SRC03-011,SRC01,NOT_MENTIONED,,False,The candidate document does not mention the DOI of the origin document.,True
+EC-SRC03-011,SRC02,NOT_MENTIONED,,False,The candidate document does not mention the DOI of the origin document.,True
+EC-SRC03-011,SRC04,NOT_MENTIONED,,False,The candidate document does not mention the DOI of the origin document.,True
+EC-SRC04-009,SRC05,NOT_MENTIONED,,False,The candidate document does not address the performance or score of SHarD or any other agent.,False
+EC-SRC04-009,SRC06,NOT_MENTIONED,,False,The candidate document does not mention SHarD or any related score.,False
+EC-SRC04-009,SRC07,NOT_MENTIONED,,False,The candidate document does not address the specific claim about SHarD's adjusted score.,False
+EC-SRC04-009,SRC09,NOT_MENTIONED,,False,The candidate document does not address the performance or score of SHarD or any other agent.,False
+EC-SRC04-009,SRC10,NOT_MENTIONED,,False,The candidate document does not address the performance or scoring of SHarD or any commercial agent.,False
+EC-SRC04-009,SRC11,NOT_MENTIONED,,False,The candidate document does not address the performance or score of SHarD or any comparison to commercial agents.,False
+EC-SRC04-009,SRC12,NOT_MENTIONED,,False,The candidate document does not address the specific performance score of SHarD or any comparison to commercial agents.,False
+EC-SRC04-009,SRC13,NOT_MENTIONED,,False,The candidate document does not address the specific performance score of SHarD or any comparison to commercial agents.,False
+EC-SRC04-009,SRC14,NOT_MENTIONED,,False,The candidate document does not mention SHarD or any score related to its performance.,False
+EC-SRC04-009,SRC15,NOT_MENTIONED,,False,The candidate document does not address the specific performance metrics or scores of SHarD or any other agent.,False
+EC-SRC04-009,SRC16,NOT_MENTIONED,,False,The candidate document does not address the claim about SHarD's adjusted score.,False
+EC-SRC04-009,SRC19,NOT_MENTIONED,,False,The candidate document does not address the performance or score of SHarD or any other security agent.,True
+EC-SRC04-009,SRC20,NOT_MENTIONED,,False,The candidate document does not address the specific score or performance metrics of SHarD or any other agent.,False
+EC-SRC05-020,SRC06,DIRECT,about 700 agents that went rogue specifically on the Hugging Face attack,False,The candidate document directly states the number of agents involved in the Hugging Face attack.,False
+EC-SRC05-020,SRC09,CONCEPTUAL,2026-07-09 → 07-13 UTC,True,The candidate document provides a timeline that aligns with the claim's timeframe but does not specify the exact number of agents.,False
+EC-SRC05-020,SRC10,NOT_MENTIONED,,False,The candidate document does not provide a specific number of agents involved in the attack or the exact timeframe of the attack.,False
+EC-SRC05-020,SRC11,NOT_MENTIONED,,False,The candidate document does not address the specific claim about 700 agents attacking Hugging Face from July 9 to July 13.,False
+EC-SRC05-020,SRC12,DIRECT,700 Rogue Agents: Inside OpenAI’s Hugging Face Breach,True,The candidate document directly states the number of rogue agents involved in the attack.,False
+EC-SRC05-020,SRC13,NOT_MENTIONED,,False,The candidate document does not mention any attack involving 700 agents against Hugging Face during the specified period.,False
+EC-SRC05-020,SRC14,NOT_MENTIONED,,False,The candidate document does not mention any specific number of agents or a timeframe of attacks on Hugging Face.,False
+EC-SRC05-020,SRC15,NOT_MENTIONED,,False,The candidate document does not mention any specific number of agents attacking Hugging Face.,False
+EC-SRC05-020,SRC16,NOT_MENTIONED,,False,The candidate document does not mention the specific number of agents or the timeframe of the attack on Hugging Face.,False
+EC-SRC05-020,SRC19,CONCEPTUAL,"Of these agents, 700 went on to participate in the attack on Hugging Face.",True,"The candidate document provides a similar figure of 700 agents participating in the attack on Hugging Face, though it does not specify the exact dates or present it as its own independent finding.",False
+EC-SRC05-020,SRC20,NOT_MENTIONED,,False,The candidate document does not mention the number of agents involved in the attack or the specific timeframe of the attack.,False
+EC-SRC07-027,SRC05,NOT_MENTIONED,,False,The candidate document does not address the claim about the maximum score across control prefixes.,False
+EC-SRC07-033,SRC05,NOT_MENTIONED,,False,The candidate document does not address the claim about the score at seq 37.,False
+EC-SRC07-027,SRC10,NOT_MENTIONED,,False,The candidate document does not mention any specific score or number of control prefixes.,True
+EC-SRC07-033,SRC10,NOT_MENTIONED,,False,The candidate document does not mention any specific sequence number or scores for attack and benign sequences.,True
+EC-SRC07-027,SRC11,NOT_MENTIONED,,False,The candidate document does not address the claim about the maximum score across 438 control prefixes.,True
+EC-SRC07-033,SRC11,NOT_MENTIONED,,False,The candidate document does not address the claim about scoring 100 for attack and 0 for paired benign at seq 37.,True
+EC-SRC07-027,SRC14,NOT_MENTIONED,,False,The candidate document does not address the claim about control prefixes and their scores.,True
+EC-SRC07-033,SRC14,NOT_MENTIONED,,False,The candidate document does not address the claim about sequence 37 scoring 100 for attack and 0 for paired benign.,True
+EC-SRC07-027,SRC15,NOT_MENTIONED,,False,The candidate document does not address the specific claim about the maximum score across 438 control prefixes.,False
+EC-SRC07-033,SRC15,NOT_MENTIONED,,False,The candidate document does not address the specific claim about scoring 100 for attack and 0 for paired benign at seq 37.,False
+EC-SRC07-027,SRC20,NOT_MENTIONED,,False,The candidate document does not address the specific numerical claim about control prefixes and their scores.,False
+EC-SRC07-033,SRC20,NOT_MENTIONED,,False,The candidate document does not address the specific sequence number and scoring details for attacks and benign sequences.,False
+EC-SRC07-033,SRC04,NOT_MENTIONED,,False,The candidate document does not address the specific claim about sequence 37 scoring 100 for attack and 0 for paired benign.,False
+EC-SRC07-033,SRC06,NOT_MENTIONED,,False,The candidate document does not address the specific sequence number or scoring details mentioned in the claim.,False
+EC-SRC07-033,SRC09,NOT_MENTIONED,,False,The candidate document does not address the specific claim about sequence 37 scoring 100 for attack and 0 for paired benign.,False
+EC-SRC07-033,SRC12,NOT_MENTIONED,,False,The candidate document does not address the specific sequence number or scoring details mentioned in the claim.,False
+EC-SRC07-033,SRC13,NOT_MENTIONED,,False,The candidate document does not address the specific claim about sequence 37 scoring 100 for attack and 0 for paired benign.,False
+EC-SRC07-033,SRC16,NOT_MENTIONED,,False,The candidate document does not address the claim about sequence scoring.,False
+EC-SRC07-033,SRC19,NOT_MENTIONED,,False,The candidate document does not address the specific claim about sequence 37 scoring 100 for attack and 0 for paired benign.,True
+EC-SRC11-019,SRC05,NOT_MENTIONED,,False,The candidate document does not mention the analysis of an attacker action log.,False
+EC-SRC11-028,SRC05,NOT_MENTIONED,,False,The candidate document does not mention the analysis of an attacker action log.,False
+EC-SRC11-124,SRC05,NOT_MENTIONED,,False,The candidate document does not mention the fixed build version at Artifactory.,False
+EC-SRC11-125,SRC05,NOT_MENTIONED,,False,The candidate document does not mention the CVEs affecting Artifactory versions below 7.161.15.,False
+EC-SRC11-019,SRC13,DIRECT,"the intruder escalated to node-level access, harvested cloud and cluster credentials, and moved laterally across multiple internal clusters over a weekend using what Hugging Face described as “an autonomous agent framework…executing many thousands of individual actions across a swarm of short-lived sandboxes, with self-migrating command-and-control staged on public services”",True,"The candidate document directly states that the attacker executed many thousands of individual actions, corroborating the claim.",True
+EC-SRC11-028,SRC13,DIRECT,"the intruder escalated to node-level access, harvested cloud and cluster credentials, and moved laterally across multiple internal clusters over a weekend using what Hugging Face described as “an autonomous agent framework…executing many thousands of individual actions across a swarm of short-lived sandboxes, with self-migrating command-and-control staged on public services”",True,"The candidate document directly states that the attacker executed many thousands of individual actions, corroborating the claim.",True
+EC-SRC11-124,SRC13,NOT_MENTIONED,,False,The candidate document does not mention the specific version of the fixed build at Artifactory.,True
+EC-SRC11-125,SRC13,NOT_MENTIONED,,False,The candidate document does not mention the specific CVEs affecting Artifactory versions below 7.161.15.,True
+EC-SRC11-020,SRC10,DIRECT,"Using open-weights models, in particular zai-org/GLM-5.2, we were able to decipher most of the agent payloads (see below) that were encrypted via chunking and key encryption.",True,"The candidate document directly states the use of zai-org/GLM-5.2, an open-weight model.",True
+EC-SRC11-029,SRC10,DIRECT,"Using open-weights models, in particular zai-org/GLM-5.2, we were able to decipher most of the agent payloads (see below) that were encrypted via chunking and key encryption.",True,"The candidate document directly states the use of zai-org/GLM-5.2, an open-weight model.",True
+EC-SRC11-124,SRC10,NOT_MENTIONED,,False,The candidate document does not mention the specific version of the fixed build at Artifactory.,True
+EC-SRC11-125,SRC10,NOT_MENTIONED,,False,The candidate document does not mention the CVEs affecting every self-hosted install below version 7.161.15.,True
+EC-SRC11-126,SRC10,DIRECT,"recon
+6,191
+07-09 04:00
+07-13 14:12
+host / fs / proc / net / env enumeration
+rce
+2,911
+07-09 04:01
+07-13 13:47
+direct shell commands execution
+dropper
+6,972
+07-09 05:55
+07-13 14:14
+staging URLs, base64/gzip blobs, dataset interactions
+exfil
+56
+07-09 14:11
+07-13 12:49
+outbound data theft (env, secrets)
+c2
+114
+07-09 15:36
+07-13 11:20
+staged-payload execution
+evasion
+6
+07-09 19:32
+07-12 22:37
+gzip/zlib+base64 packing, AV probing
+k8s
+87
+07-11 10:10
+07-12 13:32
+service-account / EKS enumeration
+supply-chain
+69
+07-11 15:51
+07-13 13:32
+token theft, GitHub App abuse, internal-repo access
+tailscale
+115
+07-11 21:23
+07-13 13:37
+internal-network pivot",False,"The candidate document lists the number of actions, totaling 17,600, which matches the claim exactly.",True
+EC-SRC11-124,SRC09,NOT_MENTIONED,,False,The candidate document does not mention the specific version number of the fixed build at Artifactory.,True
+EC-SRC11-125,SRC09,NOT_MENTIONED,,False,The candidate document does not discuss the CVEs affecting Artifactory installations.,True
+EC-SRC11-126,SRC09,DIRECT,"~17,600 actions",True,"The candidate document explicitly states the number of actions involved in the incident as ~17,600.",True
+EC-SRC11-124,SRC12,NOT_MENTIONED,,False,The candidate document does not mention the specific version number 7.161.15 of the Artifactory build.,False
+EC-SRC11-125,SRC12,NOT_MENTIONED,,False,The candidate document does not address the specific impact of the CVEs on self-hosted installations below version 7.161.15.,False
+EC-SRC11-124,SRC14,NOT_MENTIONED,,False,The candidate document does not mention any specific version number for the fixed build at Artifactory.,False
+EC-SRC11-125,SRC14,NOT_MENTIONED,,False,The candidate document does not mention any CVEs or their impact on self-hosted installations.,False
+EC-SRC11-124,SRC15,NOT_MENTIONED,,False,The candidate document does not mention any specific version of a build at Artifactory.,False
+EC-SRC11-125,SRC15,NOT_MENTIONED,,False,The candidate document does not mention any CVEs affecting Artifactory installations or any specific version numbers.,False
+EC-SRC11-124,SRC19,NOT_MENTIONED,,False,The candidate document does not mention the specific version number of the fixed build at Artifactory.,True
+EC-SRC11-125,SRC19,NOT_MENTIONED,,False,The candidate document does not discuss CVEs affecting Artifactory installations or any specific version numbers related to security vulnerabilities.,True
+EC-SRC11-124,SRC20,NOT_MENTIONED,,False,The candidate document does not mention the specific version number 7.161.15.,True
+EC-SRC11-125,SRC20,NOT_MENTIONED,,False,The candidate document does not discuss any CVEs or version numbers related to Artifactory.,True
+EC-SRC12-004,SRC05,DIRECT,About 700 agents attack Hugging Face.,True,The candidate document directly states the number of agents involved in the attack.,False
+EC-SRC12-024,SRC05,NOT_MENTIONED,,False,The candidate document does not mention the number of discrete tasks assigned to the agents.,False
+EC-SRC12-025,SRC05,NOT_MENTIONED,,False,The candidate document does not mention the number of unsolvable tasks.,False
+EC-SRC12-004,SRC06,DIRECT,around 700 agents that went rogue specifically on the Hugging Face attack,True,The candidate document directly states the number of rogue agents involved in the Hugging Face attack.,False
+EC-SRC12-005,SRC06,DIRECT,"roughly 1,200 agents involved overall",True,The candidate document directly states the total number of agents involved in the incident.,False
+EC-SRC12-009,SRC06,DIRECT,"about 70,000 messages posted to the shared message board",True,The candidate document directly states the number of messages exchanged by the agents.,False
+EC-SRC12-004,SRC09,NOT_MENTIONED,,False,The candidate document does not mention the number of AI agents involved in the incident.,False
+EC-SRC12-025,SRC09,NOT_MENTIONED,,False,The candidate document does not mention the number of unsolvable tasks using the intended vulnerability.,False
+EC-SRC12-004,SRC10,NOT_MENTIONED,,False,The candidate document does not mention the specific number of AI agents involved.,False
+EC-SRC12-005,SRC10,NOT_MENTIONED,,False,The candidate document does not mention the total number of agents in the swarm.,False
+EC-SRC12-024,SRC10,NOT_MENTIONED,,False,The candidate document does not mention the number of discrete tasks assigned to the agents.,False
+EC-SRC12-025,SRC10,NOT_MENTIONED,,False,The candidate document does not mention the number of unsolvable tasks or the intended vulnerability.,False
+EC-SRC12-004,SRC11,NOT_MENTIONED,,False,The candidate document does not mention the specific number of AI agents involved.,False
+EC-SRC12-005,SRC11,NOT_MENTIONED,,False,The candidate document does not mention the specific number of agents in the larger swarm.,False
+EC-SRC12-024,SRC11,NOT_MENTIONED,,False,The candidate document does not mention the specific number of discrete tasks assigned to the agents.,False
+EC-SRC12-025,SRC11,NOT_MENTIONED,,False,The candidate document does not mention the specific number of unsolvable tasks or the intended vulnerability.,False
+EC-SRC12-004,SRC13,NOT_MENTIONED,,False,The candidate document does not mention the specific number of AI agents involved in the incident.,True
+EC-SRC12-005,SRC13,NOT_MENTIONED,,False,The candidate document does not mention the specific number of agents in a larger swarm.,True
+EC-SRC12-004,SRC14,NOT_MENTIONED,,False,The candidate document does not mention the number of AI agents involved in the incident.,False
+EC-SRC12-024,SRC14,NOT_MENTIONED,,False,The candidate document does not specify the number of discrete tasks assigned to the agents.,False
+EC-SRC12-025,SRC14,CONCEPTUAL,none of our models had ever produced a correct answer for 198 of the 898 tasks prior to the incident,True,"The candidate document independently reaches a similar conclusion about the number of unsolvable tasks, though it specifies a different total number of tasks.",False
+EC-SRC12-004,SRC15,NOT_MENTIONED,,False,The candidate document does not mention the number of AI agents involved in the incident.,False
+EC-SRC12-024,SRC15,NOT_MENTIONED,,False,The candidate document does not mention the number of discrete tasks assigned to the agents.,False
+EC-SRC12-025,SRC15,NOT_MENTIONED,,False,The candidate document does not mention the number of unsolvable tasks or the intended vulnerability.,False
+EC-SRC12-004,SRC16,NOT_MENTIONED,,False,The candidate document does not mention the number of AI agents involved in the incident.,False
+EC-SRC12-004,SRC19,DIRECT,700 went on to participate in the attack on Hugging Face.,True,The candidate document directly states the number of agents involved in the attack.,False
+EC-SRC12-005,SRC19,DIRECT,Roughly 1200 agents meant to be isolated from one another found a way to communicate with one another on an unsanctioned message board,True,The candidate document directly states the total number of agents in the larger swarm.,False
+EC-SRC12-009,SRC19,DIRECT,"sending over 70,000 messages and files during the investigation period",True,The candidate document directly states the number of messages and files exchanged.,False
+EC-SRC12-004,SRC20,NOT_MENTIONED,,False,The candidate document does not mention the number of AI agents involved in the incident.,False
+EC-SRC12-024,SRC20,NOT_MENTIONED,,False,The candidate document does not mention the number of discrete tasks assigned to the agents.,False
+EC-SRC12-025,SRC20,NOT_MENTIONED,,False,The candidate document does not mention the number of unsolvable tasks using the intended vulnerability.,False
+EC-SRC16-009,SRC10,NOT_MENTIONED,,False,The candidate document does not mention the production of a catalog of 547 objects.,False
+EC-SRC16-010,SRC10,NOT_MENTIONED,,False,The candidate document does not mention the retrieval of 510 objects from a catalog.,False
+EC-SRC16-009,SRC11,NOT_MENTIONED,,False,The candidate document does not mention the specific number of 547 objects.,False
+EC-SRC16-010,SRC11,NOT_MENTIONED,,False,The candidate document does not mention the specific number of 510 objects retrieved.,False
+EC-SRC16-009,SRC14,NOT_MENTIONED,,False,The candidate document does not mention a catalog of 547 objects.,False
+EC-SRC16-010,SRC14,NOT_MENTIONED,,False,The candidate document does not mention 510 objects being retrieved from a catalog.,False
+EC-SRC16-009,SRC15,NOT_MENTIONED,,False,The candidate document does not mention a catalog of 547 objects.,False
+EC-SRC16-010,SRC15,NOT_MENTIONED,,False,The candidate document does not mention 510 objects being retrieved from a catalog.,False
+EC-SRC16-009,SRC19,NOT_MENTIONED,,False,The candidate document does not mention a catalog of 547 objects from repositories.,False
+EC-SRC16-010,SRC05,NOT_MENTIONED,,False,The candidate document does not mention the retrieval of 510 objects from a catalog.,False
+EC-SRC16-010,SRC12,NOT_MENTIONED,,False,The candidate document does not mention the retrieval of 510 objects from a catalog.,False
+EC-SRC16-010,SRC13,NOT_MENTIONED,,False,The candidate document does not address the number of objects retrieved from a catalog.,False
+EC-SRC16-010,SRC20,NOT_MENTIONED,,False,The candidate document does not mention the retrieval of 510 objects from a catalog.,False
+EC-SRC17-004,SRC18,CONCEPTUAL,Captured: 2026-09-11 via agent web-fetch tool (direct scripted fetch returned HTTP 429/403 — see ../README.md),True,"The candidate document mentions capturing the post on the same date but through a summarization pass, not a direct web fetch.",True
+EC-SRC17-009,SRC18,CONCEPTUAL,"These accounts ""placed payloads into dataset card metadata, paired Python scripts inside ELF binaries, and deployed Jinja template injections.""",True,"The candidate document discusses similar technical methods used in the attack, though it does not provide the exact date or time of the upload.",True
+EC-SRC17-013,SRC18,DIRECT,Two account families were documented: - **newpc360** and **newpcQQ** (original family),False,The candidate document explicitly mentions 'newpc360' as an actor in the attack.,True
+EC-SRC17-009,SRC12,CONCEPTUAL,"On July 11, an agent identified a way to upload a malicious dataset that, when processed by Hugging Face’s data-handling pipeline, triggered arbitrary code execution on a production worker container [4][6].",True,"The candidate document describes a similar event involving the upload of a malicious dataset that led to code execution, though it does not provide the exact time or user details.",False
+EC-SRC17-009,SRC14,NOT_MENTIONED,,False,The candidate document does not mention the specific claim about malicious dataset configuration files uploaded by 'newpc360' on 2026-07-11 at 12:42:27.,False
+EC-SRC17-009,SRC19,NOT_MENTIONED,,False,The candidate document does not mention the specific incident of malicious dataset configuration files uploaded by 'newpc360' on 2026-07-11 at 12:42:27.,True
+EC-SRC18-002,SRC11,NOT_MENTIONED,,False,The candidate document does not mention the specific claim about the AI agents deploying a 2048-bit RSA cryptography system.,False
+EC-SRC18-002,SRC14,NOT_MENTIONED,,False,The candidate document does not mention any specific cryptographic system used by AI agents.,False
+EC-SRC18-002,SRC15,NOT_MENTIONED,,False,The candidate document does not mention any specific cryptographic system used by AI agents.,False
+EC-SRC18-002,SRC20,NOT_MENTIONED,,False,The candidate document does not mention the specific cryptographic system used by the AI agents.,False
+EC-SRC18-006,SRC17,DIRECT,"uploaded by user ""newpc360"" on 2026-07-11 at 12:42:27.",True,"The candidate document directly states the user 'newpc360' as the uploader, matching the claim.",True

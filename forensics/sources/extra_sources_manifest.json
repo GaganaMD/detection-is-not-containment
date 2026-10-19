@@ -1,0 +1,65 @@
+[
+  {
+    "url": "https://arxiv.org/abs/2607.25890",
+    "slug": "arxiv_org_abs_2607_25890",
+    "note": "Gore \u2014 SHarD (Distributing Security Controls Through Harness Engineering)",
+    "fetched_at": "2026-09-11T08:27:57.379536+00:00",
+    "status": 200,
+    "byte_length": 41959,
+    "sha256": "c8c571c99a9b13bca408259f8de99129502ac2ae312afc6048a314ed1766a2cc"
+  },
+  {
+    "url": "https://arxiv.org/abs/2507.15886",
+    "slug": "arxiv_org_abs_2507_15886",
+    "note": "Hua et al. \u2014 cost-constrained runtime monitors (sprint speaker)",
+    "fetched_at": "2026-09-11T08:27:57.379536+00:00",
+    "status": 200,
+    "byte_length": 41904,
+    "sha256": "01c770345cd91dfe3d3866e888e8c6301a06bee9d2a41888146779122049536d"
+  },
+  {
+    "url": "https://arxiv.org/abs/2604.21412",
+    "slug": "arxiv_org_abs_2604_21412",
+    "note": "Mengesha et al. \u2014 SORT / incident trajectories (sprint speaker)",
+    "fetched_at": "2026-09-11T08:27:57.379536+00:00",
+    "status": 200,
+    "byte_length": 42013,
+    "sha256": "3d242f4cc9650218f25733446a0aa62a0d221a559685faf3c7b57d8c6ae4608e"
+  },
+  {
+    "url": "https://labs.cloudsecurityalliance.org/research/csa-research-note-openai-model-sandbox-escape-huggingface-br/",
+    "slug": "labs_cloudsecurityalliance_org_research_csa_research_note_openai_model_sandbox_escape_huggingface_br",
+    "note": "CSA \u2014 The Benchmark That Broke Containment",
+    "fetched_at": "2026-09-11T08:27:57.379536+00:00",
+    "status": 200,
+    "byte_length": 108091,
+    "sha256": "cbd93bc51e57e69d1d31f6e319c91a5ee35d23aae8ebc8f3669f507fd8b0cd9e"
+  },
+  {
+    "url": "https://labs.cloudsecurityalliance.org/research/csa-research-note-hugging-face-rogue-agent-swarm-20260902-cs/",
+    "slug": "labs_cloudsecurityalliance_org_research_csa_research_note_hugging_face_rogue_agent_swarm_20260902_cs",
+    "note": "CSA \u2014 700 Rogue Agents",
+    "fetched_at": "2026-09-11T08:27:57.379536+00:00",
+    "status": 200,
+    "byte_length": 109182,
+    "sha256": "f804f7e4e191f119036ea736f7b0dab9a920f65478f0a1efdcd440e9452a9844"
+  },
+  {
+    "url": "https://metr.org/blog/2026-08-26-openai-hugging-face-incident-investigation/",
+    "slug": "metr_org_blog_2026_08_26_openai_hugging_face_incident_investigation",
+    "note": "METR + Redwood \u2014 independent investigation (~1,200 agents, ~70k messages, scorer motivation, transcript spoofing)",
+    "fetched_at": "2026-09-11T08:27:57.379536+00:00",
+    "status": 200,
+    "byte_length": 428399,
+    "sha256": "693effbc5388de107acb29045c100d70499556b0175914d984b5045dc4f90375"
+  },
+  {
+    "url": "https://openai.com/index/hugging-face-model-evaluation-security-incident/",
+    "slug": "openai_com_index_hugging_face_model_evaluation_security_incident",
+    "note": "OpenAI -- original incident disclosure post (21 Jul 2026, with update log through 26 Aug 2026). Fetched via real browser -- plain curl/urllib now 403s on openai.com (bot-blocking tightened since our first fetch of the road-ahead post). Distinct from the already-snapshotted road-ahead follow-up post.",
+    "fetched_at": "2026-09-11T14:16:32.368887+00:00",
+    "status": 200,
+    "byte_length": 458785,
+    "sha256": "38298f4e2b8b5f75a2802ed49065736ab36d75fac5c8e416ed6fce624366140c"
+  }
+]

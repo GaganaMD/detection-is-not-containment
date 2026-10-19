@@ -1,0 +1,220 @@
+[
+  {
+    "url": "https://arxiv.org/abs/2605.11086",
+    "slug": "arxiv_org_abs_2605_11086",
+    "cited_by_events": [
+      "incident_openai_hf:E001"
+    ],
+    "fetched_at": "2026-09-10T21:07:50.041104+00:00",
+    "status": 200,
+    "local_path": "forensics/sources/raw/arxiv_org_abs_2605_11086.html",
+    "byte_length": 45540,
+    "sha256": "61cadf85901e1452fa43779335236086d9c230e23d330180df4d0ea6214c300c"
+  },
+  {
+    "url": "https://collusion.wiki/",
+    "slug": "collusion_wiki",
+    "cited_by_events": [
+      "incident_dsewiki:DW001",
+      "incident_dsewiki:DW002",
+      "incident_dsewiki:DW003",
+      "incident_dsewiki:DW004",
+      "incident_dsewiki:DW005",
+      "incident_dsewiki:DW006",
+      "incident_dsewiki:DW007",
+      "incident_dsewiki:DW008",
+      "incident_dsewiki:DW009",
+      "incident_dsewiki:DW010",
+      "incident_dsewiki:DW011"
+    ],
+    "fetched_at": "2026-09-10T21:07:50.041104+00:00",
+    "status": 200,
+    "local_path": "forensics/sources/raw/collusion_wiki.html",
+    "byte_length": 157287,
+    "sha256": "425c1dbba8a7e9e6c80347d20f55587031b145f21fc45cd5206f42180b861eac"
+  },
+  {
+    "url": "https://factity.github.io/incident/openai-huggingface-incident-analysis.html",
+    "slug": "factity_github_io_incident_openai_huggingface_incident_analysis_html",
+    "cited_by_events": [
+      "incident_openai_hf:E028"
+    ],
+    "fetched_at": "2026-09-10T21:07:50.041104+00:00",
+    "status": 200,
+    "local_path": "forensics/sources/raw/factity_github_io_incident_openai_huggingface_incident_analysis_html.html",
+    "byte_length": 25975,
+    "sha256": "3cfcfdd05de5e90a30c074728ef1cc315c67ce704c9ea55da64468a04ec40116"
+  },
+  {
+    "url": "https://github.com/GaganaMD/agent-termination-assurance",
+    "slug": "github_com_GaganaMD_agent_termination_assurance",
+    "cited_by_events": [
+      "incident_openrouter_warning:OR004"
+    ],
+    "fetched_at": "2026-09-10T21:07:50.041104+00:00",
+    "status": 200,
+    "local_path": "forensics/sources/raw/github_com_GaganaMD_agent_termination_assurance.html",
+    "byte_length": 336058,
+    "sha256": "f5de618f32733cc39fd93dd25d17422a73913b5b73a8fa53d93f17d7e0b62b2b"
+  },
+  {
+    "url": "https://github.com/GaganaMD/agent-termination-assurance/tree/main/OpenRouterExp/replicatingOpenRouterIncident",
+    "slug": "github_com_GaganaMD_agent_termination_assurance_tree_main_OpenRouterExp_replicatingOpenRouterIncident",
+    "cited_by_events": [
+      "incident_openrouter_warning:OR001",
+      "incident_openrouter_warning:OR002",
+      "incident_openrouter_warning:OR003"
+    ],
+    "fetched_at": "2026-09-10T21:07:50.041104+00:00",
+    "status": 200,
+    "local_path": "forensics/sources/raw/github_com_GaganaMD_agent_termination_assurance_tree_main_OpenRouterExp_replicatingOpenRouterIncident.html",
+    "byte_length": 238527,
+    "sha256": "a99277c1997259a7007e6f9f212dd5d3c267ffec23ad08bc9300ddcd3cda44e3"
+  },
+  {
+    "url": "https://huggingface-anatomy-of-frontier-lab-model-intrusion.static.hf.space/index.html",
+    "slug": "huggingface_anatomy_of_frontier_lab_model_intrusion_static_hf_space_index_html",
+    "cited_by_events": [
+      "incident_hf_space_representative:HF001",
+      "incident_hf_space_representative:HF002",
+      "incident_hf_space_representative:HF003",
+      "incident_hf_space_representative:HF004",
+      "incident_hf_space_representative:HF005",
+      "incident_hf_space_representative:HF006",
+      "incident_hf_space_representative:HF007",
+      "incident_hf_space_representative:HF008",
+      "incident_hf_space_representative:HF009",
+      "incident_hf_space_representative:HF010",
+      "incident_hf_space_representative:HF011",
+      "incident_hf_space_representative:HF012",
+      "incident_hf_space_representative:HF013",
+      "incident_hf_space_representative:HF014",
+      "incident_hf_space_representative:HF015",
+      "incident_hf_space_representative:HF016",
+      "incident_hf_space_representative:HF017",
+      "incident_hf_space_representative:HF018",
+      "incident_hf_space_representative:HF019",
+      "incident_hf_space_representative:HF020",
+      "incident_hf_space_representative:HF021"
+    ],
+    "fetched_at": "2026-09-10T21:07:50.041104+00:00",
+    "status": 200,
+    "local_path": "forensics/sources/raw/huggingface_anatomy_of_frontier_lab_model_intrusion_static_hf_space_index_html.html",
+    "byte_length": 43983,
+    "sha256": "2ca3b58bdfe18c9cda267ca0eb246eada95eb731d7ac8fb952303e3b0ec722cf"
+  },
+  {
+    "url": "https://huggingface.co/blog/agent-intrusion-technical-timeline",
+    "slug": "huggingface_co_blog_agent_intrusion_technical_timeline",
+    "cited_by_events": [
+      "incident_openai_hf:E011",
+      "incident_openai_hf:E012",
+      "incident_openai_hf:E013",
+      "incident_openai_hf:E014",
+      "incident_openai_hf:E015",
+      "incident_openai_hf:E016",
+      "incident_openai_hf:E017",
+      "incident_openai_hf:E018",
+      "incident_openai_hf:E022",
+      "incident_openai_hf:E023",
+      "incident_openai_hf:E024",
+      "incident_openai_hf:E025",
+      "incident_openai_hf:E026",
+      "incident_openai_hf:E027"
+    ],
+    "fetched_at": "2026-09-10T21:07:50.041104+00:00",
+    "status": 200,
+    "local_path": "forensics/sources/raw/huggingface_co_blog_agent_intrusion_technical_timeline.html",
+    "byte_length": 720182,
+    "sha256": "fb5af0a256e69c58dda1959c50aba6c188d259c31567d8e51465a2ed62191f32"
+  },
+  {
+    "url": "https://huggingface.co/blog/security-incident-july-2026",
+    "slug": "huggingface_co_blog_security_incident_july_2026",
+    "cited_by_events": [
+      "incident_openai_hf:E020"
+    ],
+    "fetched_at": "2026-09-10T21:07:50.041104+00:00",
+    "status": 200,
+    "local_path": "forensics/sources/raw/huggingface_co_blog_security_incident_july_2026.html",
+    "byte_length": 574742,
+    "sha256": "178e83097bb973f8c09ca2831a6acded1bb2b0ce48c26f4d40d45ebb19b75b48"
+  },
+  {
+    "url": "https://openai.com/index/hugging-face-incident-and-the-road-ahead/",
+    "slug": "openai_com_index_hugging_face_incident_and_the_road_ahead",
+    "cited_by_events": [
+      "incident_openai_hf:E002",
+      "incident_openai_hf:E003",
+      "incident_openai_hf:E004",
+      "incident_openai_hf:E005",
+      "incident_openai_hf:E006",
+      "incident_openai_hf:E007",
+      "incident_openai_hf:E008",
+      "incident_openai_hf:E009",
+      "incident_openai_hf:E010",
+      "incident_openai_hf:E019",
+      "incident_openai_hf:E021"
+    ],
+    "fetched_at": "2026-09-10T21:07:50.041104+00:00",
+    "status": 200,
+    "local_path": "forensics/sources/raw/openai_com_index_hugging_face_incident_and_the_road_ahead.html",
+    "byte_length": 1082236,
+    "sha256": "a626250b121cd07c1483fff6db75eee047006a223f7d6133d9ceb20c447610c3"
+  },
+  {
+    "url": "https://www.anthropic.com/research/investigating-incidents-cybersecurity-evals",
+    "slug": "www_anthropic_com_research_investigating_incidents_cybersecurity_evals",
+    "cited_by_events": [
+      "incident_anthropic:A001",
+      "incident_anthropic:A002",
+      "incident_anthropic:A003",
+      "incident_anthropic:A004",
+      "incident_anthropic:A005",
+      "incident_anthropic:A006",
+      "incident_anthropic:A007",
+      "incident_anthropic:A008",
+      "incident_anthropic:A009",
+      "incident_anthropic:A010"
+    ],
+    "fetched_at": "2026-09-10T21:07:50.041104+00:00",
+    "status": 200,
+    "local_path": "forensics/sources/raw/www_anthropic_com_research_investigating_incidents_cybersecurity_evals.html",
+    "byte_length": 205603,
+    "sha256": "ee2a2641cb94dad1f5c2dd6d0c97b7207b752d420123c095381dc85c435e3fc1"
+  },
+  {
+    "url": "https://www.hiddenlayer.com/report-and-guide/july-2026-agent-intrusion",
+    "slug": "www_hiddenlayer_com_report_and_guide_july_2026_agent_intrusion",
+    "cited_by_events": [
+      "incident_openai_hf:E029"
+    ],
+    "fetched_at": "2026-09-10T21:07:50.041104+00:00",
+    "status": 200,
+    "local_path": "forensics/sources/raw/www_hiddenlayer_com_report_and_guide_july_2026_agent_intrusion.html",
+    "byte_length": 210397,
+    "sha256": "f60da09d4a09d15a8a8babc04b620b23f943cb5bb2e8aa2337bd945528309c24"
+  },
+  {
+    "url": "https://www.lesswrong.com/posts/fBLDaAKzigo65eJn7/public-evidence-of-the-openai-huggingface-ai-attack",
+    "slug": "www_lesswrong_com_posts_fBLDaAKzigo65eJn7_public_evidence_of_the_openai_huggingface_ai_attack",
+    "cited_by_events": [
+      "incident_openai_hf:E030",
+      "incident_openai_hf:E031",
+      "incident_openai_hf:E032"
+    ],
+    "fetched_at": "2026-09-10T21:07:50.041104+00:00",
+    "status": "FETCH_FAILED",
+    "note": "blocked scripted fetch (see README.md for this source's manual capture)"
+  },
+  {
+    "url": "https://www.lesswrong.com/posts/pok3KtAGApwvCBndf/further-public-evidence-of-the-openai-huggingface-attack",
+    "slug": "www_lesswrong_com_posts_pok3KtAGApwvCBndf_further_public_evidence_of_the_openai_huggingface_attack",
+    "cited_by_events": [
+      "incident_openai_hf:E033"
+    ],
+    "fetched_at": "2026-09-10T21:07:50.041104+00:00",
+    "status": "FETCH_FAILED",
+    "note": "blocked scripted fetch (see README.md for this source's manual capture)"
+  }
+]
