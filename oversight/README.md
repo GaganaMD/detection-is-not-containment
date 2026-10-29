@@ -44,7 +44,7 @@ python -m oversight.run_monitor --run
 python -m oversight.run_overseer --run
 ```
 ```bash
-modal app stop dnc-qwen3-monitor
+modal app stop dnc-qwen3-monitor --yes
 ```
 
 Re-running a command resumes from the log in `results/oversight/` and retries only failed calls.

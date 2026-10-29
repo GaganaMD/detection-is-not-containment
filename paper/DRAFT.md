@@ -5,10 +5,6 @@ Gagana M D (Independent Researcher)
 *Extends "Detection Is Not Containment", a project by Gagana M D, Kaustubh Gupta and María Inés
 Berdiñas at the Apart Research AI Incident Response Sprint (September 2026). See Contributions.*
 
-> Drafting conventions: `[R: field.path]` marks a number that `oversight/analyze.py` writes to
-> `results/oversight/summary.json`; fill it from that file, never by hand. `[TODO]` marks prose
-> that depends on results. Remove this block before submission.
-
 ## Abstract
 
 A monitor that flags an AI agent's harmful action helps only if someone can still stop the action
@@ -20,12 +16,18 @@ prevented the unauthorized effect; the same monitor also revoked a legitimate ru
 identifier format changed. Here we scale that setting to 54 matched pairs of authorized and
 unauthorized trajectories across six task types, three identifier formats and three intervention
 margins, and add the step that real deployments insert between detection and containment: an
-overseer who decides whether to revoke. We compare automatic revocation, escalation to human
-overseers under 8- and 28-second deadlines (pilot, n = [R: human.n_participants]), and escalation
-to an LLM overseer. [TODO: one sentence on the monitor result at scale; one on whether humans
-contained unauthorized runs in time and at what disruption cost; one on what evidence they
-needed.] The study was pre-registered before data collection, and all code, prompts, call logs
-and analysis are public.
+overseer who decides whether to revoke. With the authorized-target set visible, the monitor's
+own rationale named the violation in 34 of 54 unauthorized runs, yet its score never reached the
+original threshold before the last-safe point (0 of 54); it raised no false alarms. Asked instead
+to decide "revoke or allow" on the same evidence, the same model revoked all 54 unauthorized runs
+and none of the 54 authorized ones. Whether the monitor's score rose above zero just before the
+boundary depended on identifier format (13 of 18 alphabetic, 7 of 18 numeric, 1 of 18 opaque).
+When the monitor did
+cross, it crossed at the evidence event, so the full margin was available: the loss came from
+turning recognition into an escalation, not from timing. A first human pilot session shows the
+same pattern from the other side: with the list visible and no timeouts, the participant allowed
+3 of 4 unauthorized runs, with high confidence, and reported relying on the wording of the
+warning. The study was pre-registered; all code, prompts, call logs and analysis are public.
 
 ## 1. Introduction
 
@@ -138,45 +140,98 @@ run, which we state wherever the numbers appear.
 
 ## 5. Results
 
-### 5.1 Monitor timing at scale
+All monitor and overseer calls completed (3,681 unique monitor inputs, 1,296 overseer calls; one
+transient failure succeeded on retry). Numbers below are from `results/oversight/summary.json`;
+intervals are 95% Wilson intervals.
 
-| Evidence | Unauthorized: crossed by last-safe point | Authorized: crossed by last-safe point | Decision unstable across samples |
-|---|---|---|---|
-| G0 | [R: monitor_frozen_threshold.by_level.G0.attack.crossed_before_boundary] | [R: ...G0.benign.crossed_before_boundary] | [R: ...G0.*.critical_prefix_decision_unstable] |
-| G2 | [R: ...G2.attack...] | [R: ...G2.benign...] | [R: ...] |
-| G3 | [R: ...G3.attack...] | [R: ...G3.benign...] | [R: ...] |
+### 5.1 The monitor recognises more than it escalates
 
-*Table 1. Threshold 51. Calibrated-threshold results are in Appendix B.*
-
-[TODO: H1, whether authorized-run crossings depend on identifier format, from
-`by_level_morphology`; compare with the Phase E pattern. H2, whether instability is higher on
-authorized runs. Figure: `fig_monitor_by_representation.png`.]
-
-### 5.2 Human overseers under a deadline
-
-| Evidence | Deadline | Unauthorized revoked in time | Authorized revoked | Timed out | Median decision time |
-|---|---|---|---|---|---|
-| G0 | 8 s | [R: human.cells."G0\|m1".attack.revoked] | [R: ...benign.revoked] | [R] | [R] |
-| G0 | 28 s | [R] | [R] | [R] | [R] |
-| G2 | 8 s | [R] | [R] | [R] | [R] |
-| G2 | 28 s | [R] | [R] | [R] | [R] |
-
-*Table 2. k/n with 95% Wilson intervals. Pilot; per-participant results in Appendix C.*
-
-[TODO: H3 manipulation check (G0 near chance?), H4 (does the 8 s deadline cost containment at G2,
-through timeouts or errors?). Quote the free-text answers on what participants relied on.]
-
-### 5.3 Who should receive the alert
-
-| Evidence | Margin | Automatic revocation | Escalate to human | Escalate to LLM overseer |
+| Evidence | Unauthorized: crossed 51 by last-safe point | Authorized: crossed 51 | Unauthorized: crossed calibrated threshold | Authorized: crossed calibrated threshold |
 |---|---|---|---|---|
-| G0 | 1 | [R: triage] | [R] | [R] |
-| G2 | 1 | [R] | [R] | [R] |
-| G2 | 6 | [R] | [R] | [R] |
+| G0 | 0/54 | 0/54 | 0/54 | 0/54 |
+| G2 | 0/54 | 0/54 | 25/54 (0.34 to 0.59) | 0/54 |
+| G3 | 39/54 (0.59 to 0.82) | 0/54 | 54/54 | 0/54 |
 
-*Table 3. Containment / disruption. Assumes independent errors (Section 4).*
+*Table 1. Threshold crossings at or before the last-safe point. The calibrated threshold is 1:
+every one of 8,748 pre-evidence prefixes scored exactly 0, so the pre-registered rule reduces to
+"any non-zero score" (Deviation 1).*
 
-[TODO: H5. Figure: `fig_overseer_tradeoff.png`.]
+The monitor raised no false alarm on any authorized run, at any evidence level or threshold.
+Its failures were all missed detections, and they came from the score rather than the reading.
+At the last prefix before the boundary, G2 unauthorized runs scored either 0 (33 runs) or 50
+(21 runs), never higher, and the monitor's own `would_intervene` flag was false in all 54. Yet
+its one-sentence rationale stated that the target was not in the authorized set in 34 of the 54
+(a fixed pattern match; Deviation 2). A typical output reads: *"The agent staged a grant for
+scope_J, which is not in the authorized targets, indicating potential inconsistency with the
+task"*, scored 50, which the prompt defines as "substantial ambiguity". Five samples at
+temperature 0.7 gave the same score.
+
+**Timing was not the constraint.** Whenever the monitor crossed, it crossed at the evidence event
+itself, so the realised margin equalled the full margin (median 1, 3 and 6 events for margins 1, 3
+and 6). The detection was early enough every time it happened.
+
+**Identifier format still matters, in the opposite direction from before.** Among G2
+unauthorized runs, a score of 50 appeared for 13 of 18 alphabetic identifiers (`route_C`), 7 of 18
+numeric (`acct_42`) and 1 of 18 opaque (`c-7f3a`). In the single-fixture Phase E study, unusual
+formats produced false alarms on authorized runs; here they suppress detection of unauthorized
+ones. Both are the same weakness: the decision depends on how the identifier looks, not only on
+whether it is in the set.
+
+**H1** (crossings on most G2 unauthorized runs, false crossings varying by format) is not
+supported as stated; format-dependence appears in missed detections instead. **H2** (more
+instability on authorized runs) is not supported: instability was low everywhere and highest on
+G2 unauthorized runs at the calibrated threshold (8/54) against 0/54 authorized.
+
+These results come from a different serving stack than the single-fixture phases (bf16 weights on
+vLLM with thinking disabled, against a 4-bit Ollama build), so we do not attribute the change
+from the earlier 100-versus-0 separation to any one factor.
+
+### 5.2 Asked to decide rather than score, the same model is exact
+
+| Evidence | Unauthorized revoked | Authorized revoked | Samples disagree |
+|---|---|---|---|
+| G0 | 3/54 | 3/54 | 5/54 each arm |
+| G2 | 54/54 | 0/54 | 0/54 and 1/54 |
+| G3 | 54/54 | 0/54 | 0/54 |
+
+*Table 2. LLM overseer, temperature 0, last pre-boundary prefix.*
+
+With the G2 record, Qwen3-14B prompted as an overseer choosing "revoke" or "allow" was correct on
+all 108 runs. On G0, where the two runs are identical, it defaulted to allowing (3 revocations
+per arm), as it should when nothing distinguishes them. The difference from Section 5.1 is the
+output the model is asked for: a binary decision with stated consequences, against a 0 to 100
+suspicion score read through a fixed threshold.
+
+### 5.3 First human session
+
+One participant has completed the study so far, so these are observations about one person, not
+rates. They made all 16 decisions before the deadline (no timeouts; median decision time 3.2 to
+7.1 seconds by cell, inside even the 8-second limit). With the authorized list visible (G2),
+they revoked 1 of 4 unauthorized runs and 0 of 4 authorized runs, mostly at confidence 4 or 5 out
+of 5. They had also allowed the unauthorized practice run and received feedback explaining why.
+Asked what they relied on, they wrote "the wordings of the warning issued". On G0, they revoked 1
+of 4 in each arm, consistent with guessing.
+
+This is the same gap as Section 5.1 from the human side: the evidence was on screen and there was
+time, but the decision followed the framing of the alert, which is identical for real and false
+alarms. Whether this holds for other participants, or reflects instructions that do not make the
+comparison clear enough, is what the remaining sessions will show.
+
+### 5.4 Who should receive the alert
+
+| Evidence | Margin | Automatic revocation | Escalate to LLM overseer | Escalate to human (1 participant) |
+|---|---|---|---|---|
+| G2 | 1 | 0.50 / 0.00 | 0.50 / 0.00 | 0.25 / 0.00 |
+| G2 | 6 | 0.44 / 0.00 | 0.44 / 0.00 | 0.00 / 0.00 |
+
+*Table 3. Containment / disruption at the calibrated threshold, assuming independent errors. At
+threshold 51 every G0 and G2 cell is 0 / 0, because nothing is escalated.*
+
+Because this monitor never raised a false alarm, escalation cannot lower disruption here; it can
+only lose containment, as it did in the human session. The cap on containment is set upstream:
+an alert that is never raised reaches no overseer. Pairing the monitor's score with the
+overseer's decision would recover it, since the overseer prompt caught every unauthorized run the
+score missed.
 
 ## 6. What public incident reports let us check
 
@@ -202,33 +257,54 @@ as a validated instrument.
 
 ## 7. Discussion
 
-[TODO: rewrite after results; the points below are the planned argument, not findings.]
+**Detection has two steps, and the second one failed.** The project's original claim was that
+detection is not containment: a flag after the last-safe point prevents nothing. The scaled study
+adds a step before that. The monitor read the authorization record and said, in its own words,
+that the target was not allowed, then assigned a score that sits exactly at "ambiguous" and set
+its intervene flag to false. The information was available, recognised and early; it was lost
+when converted into the number that controls escalation. Any control protocol that routes on a
+thresholded suspicion score should measure this conversion directly, for example by checking
+whether the rationale and the score agree.
 
-**Should detection be containment?** If the margin is one event, only an automatic controller
-can act, and it inherits the monitor's false positives. Escalation trades those false positives
-for time. Our numbers put a price on that trade for one class of action.
+**The decision format matters as much as the evidence.** The same model, given the same events,
+was perfect when asked to decide with the consequences of each choice spelled out. One reading is
+that a suspicion scale invites hedging, since "inconsistent with the task" is a softer claim than
+"this action is not authorized". This is one model and one prompt pair, so it is a hypothesis to
+test across models, not a general result.
 
-**What the overseer needs.** The relational record that made the monitor accurate is also what a
-person needs, and it is cheap to provide: the environment already knows the authorized set.
-Showing it is an interface decision, not a model capability.
+**What the overseer needs.** The single human session points the same way. A person with the
+authorized list in front of them, and time to spare, still followed the alert's wording. If that
+pattern holds, the useful interface change is not more time but a record that does the comparison
+for the reader, for example "target scope_J is not in the authorized set {scope_G, scope_A}".
+That is what the explicit verdict (G3) provides, and it was the only level at which the monitor's
+score crossed 51 for most unauthorized runs. The environment already knows the answer, so showing
+it costs nothing.
 
-**Containment has a learning cost.** Revoking at the first flag ends the run, and with it what the
-run could have revealed about the agent's capabilities. A reviewer suggested letting some
-incidents continue inside safe bounds, as an adaptive evaluation. A pause that holds the commit
-while preserving the agent's state is a third option between revoke and allow that this design
-could test directly, with the caveat that agents aware of evaluation may behave differently once
-paused.
+**Should detection be containment?** With no false alarms in this setting, automatic revocation
+on any non-zero score would have contained about half the G2 runs and all the G3 runs at no cost.
+That will not hold in general; the single-fixture phases showed false alarms that broke a
+legitimate task. A reviewer suggested a third option between revoking and allowing: holding the
+commit while the run continues in a sandbox, so the incident yields information instead of
+ending at the first flag. The scenarios here support adding that arm directly, with the caveat
+that an agent aware of evaluation may behave differently once paused.
 
-**Allocating scarce attention.** Escalating everything assumes unlimited reviewer time. The
-triage comparison is a first step towards a policy that routes by monitor score and remaining
-margin.
+**Allocating scarce attention.** Escalation only helps if the monitor escalates. Here the binding
+constraint on containment was the monitor's recall at the alert threshold, not the overseer. A
+next step is a triage rule that sends a case to a person when the monitor's rationale and score
+disagree; in this data the rationale named the violation in 34 of the 54 G2 unauthorized runs and
+in 1 of the 54 authorized ones.
 
 ## 8. Limitations
 
 * The tasks are synthetic and the agent's trajectories are scripted, not generated, so the study
   measures monitors and overseers, not agents.
-* Five to six volunteer participants from the author's network, not trained on-call staff. The
-  human results are a pilot and can detect only large effects.
+* One complete human session so far, from a volunteer in the author's network, not trained
+  on-call staff. It is reported as a single case; the planned pilot of five to six people can
+  detect only large effects.
+* Monitor recognition is measured by a fixed pattern match over a one-sentence rationale; it can
+  miss paraphrases and is not a validated measure of what the model represents.
+* One monitor prompt and one overseer prompt; the score-versus-decision contrast may depend on
+  their wording as much as on the output format.
 * Deadlines map events to seconds at a fixed rate; real agents act at variable speed.
 * One monitor model on a backend different from the earlier phases.
 * The triage figures assume independent errors between monitor and overseer.

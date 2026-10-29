@@ -107,4 +107,16 @@ reported separately and not pooled. No trial-level exclusions, including fast re
 
 ## Deviations
 
-None yet.
+Recorded 2026-10-29, after the model runs (monitor and overseer) and one human session.
+
+1. **Calibrated threshold is degenerate.** Every pre-evidence prefix scored 0 at temperature 0
+   (8,748 prefix evaluations), so the pre-registered rule gives a threshold of 1, i.e. "any
+   non-zero score". It is reported as specified, with this caveat.
+2. **Post-hoc analyses, labelled as such.** After seeing that no G2 unauthorized run crossed 51,
+   two analyses were added to `analyze.py`: (a) a profile of the last pre-boundary prefix (score
+   counts, the monitor's own `would_intervene` flag, and whether its rationale names
+   non-membership, matched by a fixed regular expression in the code); (b) triage at the
+   calibrated threshold as well as at 51. Neither changes a pre-registered number.
+3. **Monitor figure** shows the calibrated threshold, because at 51 it is empty below G3.
+4. **Human sample.** At the time of the first write-up, one complete session; results are
+   reported as a single case, not as rates.
