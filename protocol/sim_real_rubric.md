@@ -13,6 +13,8 @@ Fixed PASS/FAIL questions for Track 2 diagnosis. Score sheets are in `checklist_
 | SR-7 | Does the postmortem explain design — or only “what the model wanted”? | Design facts (reward, tools, network, monitors) named | Intentional-only root cause (use Stance Audit) |
 | SR-8 | Does the transcript get checked for evaluation-awareness reasoning? | CoT/transcript scans flag evaluation-awareness language for review | Covert evaluation-awareness reasoning goes unflagged, undetected |
 
+**Verdicts:** `PASS` / `FAIL` require a source that states the control's behaviour. `UNKNOWN` means sources discuss the topic but are ambiguous. `NOT_DISCLOSED` means no public source mentions the control at all. Public silence is not evidence that a control was absent or failed, so `NOT_DISCLOSED` is never counted as a FAIL. (Earlier drafts defaulted SR-4 and SR-6 to FAIL on silence; that rule was removed after review.)
+
 **Epistemic tags on scores:** `confirmed` / `asserted` / `unknown` (match forensic schema).
 
 

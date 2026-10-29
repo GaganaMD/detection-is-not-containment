@@ -8,6 +8,12 @@ This repository measures monitor evidence and threshold crossings over trajector
 
 This repository accompanies the report *Detection Is Not Containment* (Gagana M D, Kaustubh Gupta, Maria Ines; Apart Research AI Incident Response Sprint). The report has three parts: a public-source **forensics** pipeline over five AI incidents (`forensics/`, `claims/`), a **protocol** that scores those cases on a sim/real checklist (`protocol/`), and the controlled monitoring **experiment** described in the rest of this README (`pilot/`, `hermes_phase_f/`, `results/`). The experiment does not read the forensics or protocol inputs.
 
+## Extension in progress: human-deadline oversight
+
+The `oversight/` package scales the monitoring experiment from one fixture to 54 matched attack/benign pairs (6 task types x 3 identifier styles x 3 intervention margins), adds repeated sampling, and tests whether a human or LLM overseer can make the revoke-or-allow decision before the last-safe point. The design and hypotheses were pre-registered before any data: [`docs/HUMAN_DEADLINE_PREREGISTRATION.md`](docs/HUMAN_DEADLINE_PREREGISTRATION.md). Runbook: [`oversight/README.md`](oversight/README.md).
+
+Checklist scoring was also revised after review: a control that no public source mentions is now `NOT_DISCLOSED` rather than `FAIL` (see `protocol/sim_real_rubric.md`).
+
 ![Evidence arrives differently across monitor views](figures/fig1.png)
 
 ## What the project shows — and does not show
@@ -56,7 +62,8 @@ Four of the five cases rest on one or two sources, so most of their claims are s
 
 **Protocol.** An 8-item sim/real checklist (SR-1..SR-8) plus a Stance Audit (SA-1) was scored per case from the claims:
 
-- SR-1 (internet actually blocked), SR-4 (isolation proven before the run) and SR-6 (canaries trip an alarm) FAIL on every case with enough evidence to score; SR-6 fails on all five.
+- SR-1 (internet actually blocked) FAILs on every case with enough evidence to score: sources describe a residual path to the public internet.
+- SR-4 (isolation proven before the run) and SR-6 (canaries trip an alarm) are NOT_DISCLOSED on all five cases: no public source says whether these controls existed. An earlier draft scored this silence as FAIL; that rule was removed after review, because absence of disclosure is not evidence that a control was absent.
 - SR-7 and SA-1 (does the postmortem name the design, not just what the model wanted) PASS on the four well-documented cases.
 - SR-8 (evaluation-awareness reasoning checked) stays UNKNOWN: no public source contains a chain-of-thought transcript.
 - An independent LLM audit agrees with the heuristic scorer on 22 of 40 items (55%), and 2 of 8 (25%) on the largest case. The checklist is a draft, not a validated instrument.

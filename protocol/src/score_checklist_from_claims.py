@@ -52,6 +52,10 @@ CASE_ALIASES = {"openrouter_warning": "openrouter"}
 # describes it actually tripping, vs. just being present/leaked without alerting anyone.
 CANARY_ALERT_WORDS = ("alert", "trip", "detect", "flag")
 
+# Verdict for a control no public source mentions. Distinct from UNKNOWN (sources discuss
+# the topic but are ambiguous) and from FAIL (a source states the control failed).
+NOT_DISCLOSED_NOTE = "No public source mentions this control; absence of disclosure is not evidence of absence"
+
 
 def _kw(*words: str) -> re.Pattern:
     return re.compile("|".join(re.escape(w) for w in words), re.IGNORECASE)
@@ -186,21 +190,17 @@ def draft_for_case(case: str, claims: list[dict]) -> str:
             continue
         cites = by_sr[sr]
         if sr == "SR-6":
-            # Rubric: PASS when canary/decoy alerts; FAIL when "no canaries or alerts
-            # never fire" -- absence of any canary mention is itself a FAIL condition,
-            # not UNKNOWN (same bugfixed default as score_checklist.py, see
-            # protocol/PROPOSED_REVISIONS.md §3).
+            # Public silence about canaries is not evidence that no canary existed or that
+            # one failed to fire, so absence is NOT_DISCLOSED, never FAIL.
             alerted = [c for c in cites if any(w in _claim_text(c).lower() for w in CANARY_ALERT_WORDS)]
             if alerted:
                 ids = ", ".join(f"`{c['claim_id']}`" for c in alerted[:6])
                 lines.append(f"| SR-6 | PASS | {ids} | Heuristic: canary/alert language present in matching claim(s) |")
             elif cites:
                 ids = ", ".join(f"`{c['claim_id']}`" for c in cites[:6])
-                lines.append(f"| SR-6 | FAIL | {ids} | Heuristic: canary/decoy mentioned but no alert language found — treat as untripped |")
+                lines.append(f"| SR-6 | NOT_DISCLOSED | {ids} | Canary/decoy mentioned but no source says whether it alerted |")
             else:
-                lines.append(
-                    "| SR-6 | FAIL | — | No canary/alert evidence anywhere in this case's claims — rubric FAILs by default when canaries never fire |"
-                )
+                lines.append(f"| SR-6 | NOT_DISCLOSED | — | {NOT_DISCLOSED_NOTE} |")
             continue
         if cites:
             ids = ", ".join(f"`{c['claim_id']}`" for c in cites[:6])
@@ -212,9 +212,10 @@ def draft_for_case(case: str, claims: list[dict]) -> str:
             more = ""
             draft = "UNKNOWN"
             note = "No automatic cite; fill manually from primaries"
-        if sr == "SR-4" and by_sr["SR-1"]:
-            draft = "FAIL"
-            note = "No public preflight proof; isolation failures present elsewhere"
+        if sr == "SR-4" and not cites:
+            # An isolation failure elsewhere (SR-1) does not show that no preflight check ran.
+            draft = "NOT_DISCLOSED"
+            note = NOT_DISCLOSED_NOTE
         lines.append(f"| {sr} | {draft} | {ids}{more} | {note} |")
 
     lines.append("")
